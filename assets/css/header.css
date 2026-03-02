@@ -1,0 +1,136 @@
+header{
+    border-bottom: 1px solid rgba(241, 245, 246, 1);
+    background: rgba(255, 255, 255, 1);
+
+}
+
+.head-fon{
+    background: rgba(241, 245, 246, 1);
+    padding: 11px 0;
+}
+
+.header-cont{
+    width: 100%;
+    gap: 20px;
+}
+.language-min{
+    position: relative;
+}
+.language-click{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.language-click:before{
+    content: url("../img/icons/global-fill.svg");
+    width: 24px;
+}
+.language-click:after{
+    content: url("../img/icons/chevron-down.svg");
+}
+.language-click span{
+    color: rgba(21, 50, 118, 1);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.language-drop{
+    display: none;
+}
+
+.header-flex{
+    gap: 40px;
+}
+.work-time{
+    gap: 16px;
+}
+.header-flex span{
+    color: rgba(21, 50, 118, 1);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+}
+.line-hig-head{
+    display: flex;
+    width: 1px;
+    height: 40px;
+    background: rgba(21, 50, 118, 0.2);
+}
+.href-soc{
+    gap: 16px;
+}
+.location-click{
+    gap: 12px;
+    cursor: pointer;
+}
+.icon-location{
+    margin-right: 4px;
+}
+.phone-number{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.icon-phone{
+    margin-right: 4px;
+}
+
+.header-main{
+    width: 100%;
+    padding: 20px 0;
+}
+
+.logo{
+    max-width: 144px;
+    width: 100%;
+}
+.logo img{
+    width: 100%;
+}
+
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.nav-menu ul li{
+    display: flex;
+    position: relative;
+}
+.submenu{
+    display: none;
+}
+.menu-link{
+    color: rgba(21, 50, 118, 1);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    transition: 0.3s;
+    white-space: nowrap;
+    position: relative;
+}
+.has-submenu .menu-link{
+    display: flex;
+    gap: 8px;
+    padding-right: 30px;
+}
+.has-submenu .menu-link:after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 7px;
+    border-top: 2px solid rgba(21, 50, 118, 1);
+    border-right: 2px solid rgba(21, 50, 118, 1);
+    width: 6px;
+    height: 6px;
+    transform: rotate(135deg);
+    transition: 0.3s;
+}
+
+
+
+header .btn{
+    box-shadow: 1px 5px 5px 0px rgba(41, 69, 80, 0.03);
+}

@@ -1,0 +1,45 @@
+
+.icon {
+    display               : inline-block;
+    height                : 1em;
+    width                 : 1em;
+    mask-size             : contain;
+    -webkit-mask-size     : contain;
+    mask-repeat           : no-repeat;
+    -webkit-mask-repeat   : no-repeat;
+    mask-position         : center;
+    -webkit-mask-position : center;
+    background-color: rgba(21, 50, 118, 1);
+    font-size: 24px;
+}
+
+.icon.chevron-down {
+    mask-image         : url(../img/icons/chevron-down.svg);
+    -webkit-mask-image : url(../img/icons/chevron-down.svg);
+}
+
+
+
+
+
+.icon-time{
+    content: url("../img/icons/icon-time.svg");
+}
+.icon-whatsapp{
+    content: url("../img/icons/whatsapp.svg");
+}
+.icon-telegram{
+    content: url("../img/icons/telegram.svg");
+}
+.icon-phone{
+    content: url("../img/icons/phone.svg");
+}
+.icon-location{
+    content: url("../img/icons/location.svg");
+}
+.icon-arrow-left{
+    content: url("../img/icons/arrow-left.svg");
+}
+.icon-arrow-right{
+    content: url("../img/icons/arrow-right.svg");
+}
