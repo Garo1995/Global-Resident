@@ -21,24 +21,54 @@ header{
     display: flex;
     align-items: center;
     gap: 8px;
-}
-.language-click:before{
-    content: url("../img/icons/global-fill.svg");
-    width: 24px;
-}
-.language-click:after{
-    content: url("../img/icons/chevron-down.svg");
-}
-.language-click span{
+    cursor: pointer;
+    transition: 0.3s;
     color: rgba(21, 50, 118, 1);
     font-weight: 500;
     font-size: 20px;
     line-height: 100%;
 }
+.language-click:before{
+    content: url("../img/icons/global-fill.svg");
+    width: 24px;
+    height: 24px;
+}
+.language-click:after{
+    content: url("../img/icons/chevron-down.svg");
+    width: 24px;
+    height: 24px;
+}
+
 
 .language-drop{
     display: none;
+    position: absolute;
+    padding: 12px;
+    border-radius: 8px;
+    background: rgba(241, 245, 246, 1);
+    right: 20px;
 }
+
+.language-active .language-drop{
+    display: block;
+}
+.language-drop ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.language-drop ul li{
+    color: rgba(21, 50, 118, 1);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    transition: 0.3s;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
 
 .header-flex{
     gap: 40px;

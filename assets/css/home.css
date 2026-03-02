@@ -518,7 +518,9 @@ p{
 .reliable-partner-rel .partner-button-next {
     right: -35px;
 }
-
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+}
 
 
 
@@ -586,4 +588,19 @@ p{
 .concept-photo img{
     width: 100%;
     border-radius: 16px;
+}
+
+
+.blog-main{
+    margin-top: 100px;
+}
+.btn-sliver{
+    background: rgba(241, 245, 246, 1);
+    color: rgba(21, 50, 118, 1);
+}
+
+
+
+.blog-rel{
+    margin-top: 84px;
 }

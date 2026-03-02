@@ -7,7 +7,7 @@ $(".nav-menu ul li").each(function() {
 });
 
 
-$('.language-min').on('click', function (e) {
+$('.language-click').on('click', function (e) {
     $(this).parent().toggleClass('language-active');
     e.stopPropagation();
 });

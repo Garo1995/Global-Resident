@@ -1,6 +1,7 @@
 let countriesSwiper = new Swiper(".countries-slider", {
     slidesPerView: 1,
     spaceBetween: 20,
+    loop: true,
     navigation: {
         nextEl: ".countries-button-next",
         prevEl: ".countries-button-prev",
@@ -11,6 +12,8 @@ let countriesSwiper = new Swiper(".countries-slider", {
 let countriesWorkSwiper = new Swiper(".countries-work-slider", {
     slidesPerView: 1,
     spaceBetween: 20,
+    loop: true,
+
     navigation: {
         nextEl: ".count-button-next",
         prevEl: ".count-button-prev",
