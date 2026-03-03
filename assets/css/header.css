@@ -29,7 +29,10 @@ header{
     line-height: 100%;
 }
 .language-click:before{
-    content: url("../img/icons/global-fill.svg");
+    content: "";
+    background-image: url("../img/icons/global-fill.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 24px;
     height: 24px;
 }
@@ -163,4 +166,90 @@ header{
 
 header .btn{
     box-shadow: 1px 5px 5px 0px rgba(41, 69, 80, 0.03);
+}
+
+
+
+
+
+
+
+@media (max-width: 1699px){
+    .header-flex span {
+        font-size: 18px;
+    }
+    .header-flex {
+        gap: 30px;
+    }
+    .menu-link {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 1599px){
+
+    .menu-link {
+        font-size: 15px;
+    }
+    .has-submenu .menu-link {
+        padding-right: 26px;
+    }
+    .has-submenu .menu-link:after {
+        top: 2px;
+        right: 3px;
+    }
+    .language-click {
+        gap: 6px;
+        font-size: 15px;
+    }
+    .language-click:before {
+        width: 18px;
+        height: 18px;
+    }
+    .work-time {
+        gap: 12px;
+    }
+    .line-hig-head {
+        height: 30px;
+    }
+    .header-flex span {
+        font-size: 15px;
+    }
+    .icon-phone {
+        margin-right: 2px;
+        width: 18px;
+        height: 18px;
+    }
+    .href-soc {
+        gap: 12px;
+    }
+    .href-soc i{
+        width: 19px;
+    }
+    .icon-time {
+        width: 20px;
+    }
+    .language-drop ul li {
+        font-size: 15px;
+    }
+    .head-fon {
+        padding: 9px 0;
+    }
+    .header-main {
+        padding: 15px 0;
+    }
+    .logo {
+        max-width: 110px;
+    }
+    .has-submenu .menu-link {
+        padding-right: 23px;
+    }
+    .icon-location {
+        margin-right: 0;
+        width: 18px;
+    }
+
+
+
 }

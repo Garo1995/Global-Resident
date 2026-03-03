@@ -1,4 +1,11 @@
 
+jQuery('.scroll-up').click(function() {
+    jQuery("html, body").animate({
+        scrollTop: 0
+    }, 1200);
+    return false;
+});
+
 
 $(".nav-menu ul li").each(function() {
     if ($(this).find(".submenu").length > 0) {
@@ -7,25 +14,32 @@ $(".nav-menu ul li").each(function() {
 });
 
 
-$('.language-click').on('click', function (e) {
-    $(this).parent().toggleClass('language-active');
-    e.stopPropagation();
-});
+document.addEventListener("DOMContentLoaded", function () {
+    const languageClick = document.querySelector('.language-click');
+    const languageMin = document.querySelector('.language-min');
+    const languageItems = document.querySelectorAll('.language-drop ul li');
+    // Открытие / закрытие
+    languageClick.addEventListener('click', function (e) {
+        languageMin.classList.toggle('language-active');
+        e.stopPropagation();
+    });
+    // Выбор языка
+    languageItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            const temp = languageClick.innerHTML;
+            languageClick.innerHTML = this.innerHTML;
+            this.innerHTML = temp;
+            languageMin.classList.remove('language-active');
+        });
+    });
+    // Закрытие при клике вне блока
+    window.addEventListener('click', function (e) {
+        if (!languageMin.contains(e.target)) {
+            languageMin.classList.remove('language-active');
+        }
+    });
 
-$('.language-drop ul li').on('click', function () {
-    let text_in = $('.language-click').html();
-    let selected_text = $(this).html();
-    $('.language-click').html(selected_text);
-    $(this).html(text_in)
-    $('.language-min').removeClass('language-active')
 });
-$(window).on('click', function (e) {
-    let menuSort = $('.language-min');
-    if (e.target !== menuSort) {
-        menuSort.removeClass('language-active');
-    }
-});
-
 
 
 
@@ -62,63 +76,36 @@ $(function () {
 
 
 
-
-
-
-
-
-
-
 $(document).ready(function () {
 
-    addActiveClass('services-menu', 'services-active');
-    changeCaseBlock(this, 'services-menu', 'services-items', 'services-active', 'services-click');
-    $('.services-click').on('click', function () {
-        changeActiveClassWithClick(this, 'services-menu', 'services-active')
-        changeCaseBlock(this, 'services-menu', 'services-items', 'services-active', 'services-click');
-    })
+    initTabs({
+        menu: 'services-menu',
+        item: 'services-click',
+        content: 'services-items',
+        active: 'services-active'
+    });
 
 
-    function addActiveClass(parent_menu, active_class) {
-        let prt = $('.' + parent_menu);
-        let prt_childrens = $(prt).children();
-        let prt_child_li = $(prt_childrens).children();
-        let first_child = $(prt_child_li)[0]
-        if (!$(first_child).hasClass(active_class)) {
-            !$(first_child).addClass(active_class)
-        }
-    }
-    function changeActiveClassWithClick($this, parent_block, active_class) {
-        let prt = $($this).parents('.' + parent_block);
-        let prt_child = $(prt).find('li');
-        $(prt_child).each(function () {
-            $(this).removeClass(active_class);
-        })
-        $($this).addClass(active_class);
-    }
-    function changeCaseBlock($this, case_menu, case_block, active_class, menu_link) {
-        let case_menu_block = $('.' + case_menu);
-        let case_block_sub = $('.' + case_block);
-        let case_block_child = $(case_block_sub).children();
-        $(case_block_child).each(function () {
-            $(this).css({display: 'none', height: 0});
-        })
-        if ($($this).hasClass(menu_link)) {
-            let this_attr = $($this).attr('data-catalog');
-            $(case_block_child).each(function () {
-                if ($(this).attr('data-catalog') == this_attr) {
-                    $(this).css({display: 'block', height: '100%'});
-                }
-            })
-        } else {
-            let active_find = $(case_menu_block).find('.' + active_class);
-            let active_find_attr = $(active_find).attr('data-catalog');
-            $(case_block_child).each(function () {
-                if ($(this).attr('data-catalog') == active_find_attr) {
-                    $(this).css({display: 'block', height: '100%'});
-                }
-            })
+    function initTabs(config) {
+
+        const $menu = $('.' + config.menu);
+        const $items = $menu.find('.' + config.item);
+        const $blocks = $('.' + config.content).children();
+
+        // Первый активный
+        const $first = $items.first();
+        $first.addClass(config.active);
+        showBlock($first.data('catalog'));
+        // Клик
+        $items.on('click', function () {
+            $items.removeClass(config.active);
+            $(this).addClass(config.active);
+            showBlock($(this).data('catalog'));
+        });
+
+        function showBlock(catalog) {
+            $blocks.hide();
+            $blocks.filter('[data-catalog="' + catalog + '"]').show();
         }
     }
 });
-
