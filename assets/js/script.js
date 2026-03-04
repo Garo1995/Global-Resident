@@ -109,3 +109,48 @@ $(document).ready(function () {
         }
     }
 });
+
+
+
+$('.services-mobile-selected').on('click', function (e) {
+    $(this).parent().toggleClass('services-mobile-active');
+})
+
+$('.services-click').on('click', function (e) {
+    let selectedText = $(this).html();
+    $('.services-mobile-selected').html(selectedText);
+    $('.services-menu').removeClass('services-mobile-active')
+})
+
+
+
+
+
+$('.map-menu-select').on('click', function () {
+    $(this).parent().toggleClass('map-select-active');
+})
+
+$('.map-menu ul li').on('click', function () {
+    let selectedMap = $(this).html();
+    $('.map-menu-select').html(selectedMap);
+    $('.map-menu').removeClass('map-select-active')
+})
+
+
+
+
+$('.phone-office-open').on('click', function (e) {
+    e.stopPropagation();
+   $('.phone-office-drop').toggleClass('phone-office-active')
+})
+
+$(window).on('click', function (e) {
+    let menuSort = $('.phone-office-drop');
+    if (e.target !== menuSort) {
+        menuSort.removeClass('phone-office-active');
+    }
+});
+
+
+
+

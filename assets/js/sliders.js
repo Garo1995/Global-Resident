@@ -24,7 +24,36 @@ let countriesWorkSwiper = new Swiper(".countries-work-slider", {
 let partnerSwiper = new Swiper(".partner-slider", {
     slidesPerView: 3,
     spaceBetween: 8,
+    breakpoints: {
+        1199: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
 
+        1020: {
+            slidesPerView: 4,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        767: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        570: {
+            slidesPerView: 2.5,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+            loop: true,
+        },
+        320: {
+            slidesPerView: 2.1,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+            loop: true,
+        },
+    },
     navigation: {
         nextEl: ".partner-button-next",
         prevEl: ".partner-button-prev",

@@ -83,6 +83,7 @@ header{
     color: rgba(21, 50, 118, 1);
     font-weight: 500;
     font-size: 20px;
+    letter-spacing: -0.04em;
     line-height: 100%;
 }
 .line-hig-head{
@@ -104,11 +105,43 @@ header{
 .phone-number{
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
+
 }
-.icon-phone{
-    margin-right: 4px;
+.phone-office{
+    position: relative;
 }
+.phone-office-open{
+    display: flex;
+    margin-left: 12px;
+    cursor: pointer;
+}
+.phone-office-drop{
+    position: absolute;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background: rgba(241, 245, 246, 1);
+    top: 30px;
+    right: 0;
+    z-index: 11;
+    display: none;
+}
+.phone-office-drop ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.phone-office-drop ul li a {
+    color: rgba(21, 50, 118, 1);
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.04em;
+    line-height: 100%;
+}
+.phone-office-active {
+    display: block;
+}
+
 
 .header-main{
     width: 100%;
@@ -165,7 +198,7 @@ header{
 
 
 header .btn{
-    box-shadow: 1px 5px 5px 0px rgba(41, 69, 80, 0.03);
+    box-shadow: 1px 5px 5px 0 rgba(41, 69, 80, 0.03);
 }
 
 
@@ -251,5 +284,46 @@ header .btn{
     }
 
 
+
+}
+@media (max-width: 1299px){
+    .has-submenu .menu-link:after {
+        top: 3px;
+        right: 2px;
+        width: 5px;
+        height: 5px;
+    }
+    .nav-menu ul {
+        gap: 14px;
+    }
+    .has-submenu .menu-link {
+        padding-right: 18px;
+    }
+    .href-soc span{
+        display: none;
+    }
+    .work-time{
+        display: none;
+    }
+    .head-fon {
+        padding: 8px 0;
+    }
+
+}
+@media (max-width: 1199px){
+    .nav-menu{
+        display: none;
+    }
+}
+@media (max-width: 767px){
+    .head-fon{
+        display: none;
+    }
+    .header-main .btn{
+        display: none;
+    }
+    .header-main {
+        padding: 24px 0;
+    }
 
 }
