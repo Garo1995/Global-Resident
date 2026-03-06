@@ -137,6 +137,8 @@ button, .btn, .btn-white{
     width: 43px;
     height: 43px;
     padding: 16px;
+    position: relative;
+    border-radius: 8px;
 
 }
 .btn-arrow:after{

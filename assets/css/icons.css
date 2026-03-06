@@ -46,3 +46,15 @@
 .icon-vk{
     content: url("../img/icons/vk.svg");
 }
+.icon-close{
+    content: url("../img/icons/icon-close.svg");
+}
+.telegram-mob{
+    content: url("../img/icons/telegram-mob.svg");
+}
+.icon-call{
+    content: url("../img/icons/icon-call.svg");
+}
+.whatsapp-lin{
+    content: url("../img/icons/whatsapp-lin.svg");
+}

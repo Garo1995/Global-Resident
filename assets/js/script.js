@@ -7,39 +7,10 @@ jQuery('.scroll-up').click(function() {
 });
 
 
-$(".nav-menu ul li").each(function() {
-    if ($(this).find(".submenu").length > 0) {
-        $(this).addClass("has-submenu");
-    }
-});
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const languageClick = document.querySelector('.language-click');
-    const languageMin = document.querySelector('.language-min');
-    const languageItems = document.querySelectorAll('.language-drop ul li');
-    // Открытие / закрытие
-    languageClick.addEventListener('click', function (e) {
-        languageMin.classList.toggle('language-active');
-        e.stopPropagation();
-    });
-    // Выбор языка
-    languageItems.forEach(function (item) {
-        item.addEventListener('click', function () {
-            const temp = languageClick.innerHTML;
-            languageClick.innerHTML = this.innerHTML;
-            this.innerHTML = temp;
-            languageMin.classList.remove('language-active');
-        });
-    });
-    // Закрытие при клике вне блока
-    window.addEventListener('click', function (e) {
-        if (!languageMin.contains(e.target)) {
-            languageMin.classList.remove('language-active');
-        }
-    });
 
-});
+
 
 
 
@@ -139,17 +110,6 @@ $('.map-menu ul li').on('click', function () {
 
 
 
-$('.phone-office-open').on('click', function (e) {
-    e.stopPropagation();
-   $('.phone-office-drop').toggleClass('phone-office-active')
-})
-
-$(window).on('click', function (e) {
-    let menuSort = $('.phone-office-drop');
-    if (e.target !== menuSort) {
-        menuSort.removeClass('phone-office-active');
-    }
-});
 
 
 
