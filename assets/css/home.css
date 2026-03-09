@@ -15,7 +15,7 @@ h2{
 h3{
     font-size: 32px;
 }
-p, span, a, input, ul li, small{
+p, span, a, input, ul li, small, textarea{
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
@@ -1065,7 +1065,8 @@ footer{
 }
 
 @media (max-width: 1599px){
-    p, span, a, input, ul li, small {
+
+    p, span, a, input, ul li, small, textarea{
         font-size: 15px;
 
     }

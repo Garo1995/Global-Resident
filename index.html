@@ -4625,7 +4625,7 @@
                     <button class="btn">Связаться</button>
                 </div>
             </div>
-            <button class="btn consultation-btn">Консультация</button>
+            <button data-modal="modal" class="open-modal btn consultation-btn">Консультация</button>
             <div class="open-menu">
                 <span></span>
                 <span></span>
@@ -4640,7 +4640,7 @@
             <div class="live-dream-title">
                 <h1>живи там, <br> где мечтаешь</h1>
                 <p>Доверьте свою мечту профессионалам, и мы сделаем ваше второе гражданство реальностью</p>
-                <button class="btn">Получить консультацию</button>
+                <button class="open-modal btn" data-modal="modal-get">Получить консультацию</button>
             </div>
             <div class="live-dream-cnt">
                 <div class="live-residency" style="background-image: url('./assets/img/residency.jpg');">
@@ -4686,6 +4686,10 @@
         </div>
     </div>
 </section>
+
+
+
+
 <section class="services-main">
     <div class="container">
         <div class="services-title G-align-center G-justify-between">
@@ -5398,6 +5402,116 @@
         </div>
     </div>
 </footer>
+
+
+<!--============-modal-call-============-->
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+
+        <div class="modal-title G-flex-column G-align-center">
+            <h2>свяжитесь с нами</h2>
+            <p>Оставьте заявку и получите бесплатную консультацию специалиста</p>
+        </div>
+        <form>
+            <div class="contact-item">
+                <div class="contact-input">
+                    <label>
+                        <input type="text" placeholder="Имя">
+                    </label>
+                </div>
+                <div class="contact-input">
+                    <label>
+                        <input type="text" name="tel" placeholder="Телефон" class="mask-phone">
+                    </label>
+                </div>
+                <div class="contact-input">
+                    <label>
+                        <input type="text" placeholder="E-mail">
+                    </label>
+                </div>
+                <div class="contact-input">
+                    <label>
+                        <textarea placeholder="Ваш вопрос"></textarea>
+                    </label>
+                </div>
+
+                <button class="btn">Отправить</button>
+                <label class="checkbox-lab">
+                    <small>Я согласен на обработку моих персональных данных.</small>
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                </label>
+
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+<!--============-modal-presentation-============-->
+
+
+
+<div class="modal" id="modal-get">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+
+        <div class="modal-title G-flex-column G-align-center">
+            <h2>получить презентацию</h2>
+            <p>Оставьте заявку и получите бесплатную презентацию с подробной информацией</p>
+        </div>
+        <form>
+            <div class="contact-item">
+                <div class="contact-input">
+                    <label>
+                        <input type="text" placeholder="Имя">
+                    </label>
+                </div>
+                <div class="contact-input">
+                    <label>
+                        <input type="text" name="tel" placeholder="Телефон" class="mask-phone">
+                    </label>
+                </div>
+                <div class="contact-input">
+                    <label>
+                        <input type="text" placeholder="E-mail">
+                    </label>
+                </div>
+
+                <button type="submit" class="btn">Отправить</button>
+                <label class="checkbox-lab">
+                    <small>Я согласен на обработку моих персональных данных.</small>
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                </label>
+
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+<!--============-modal-thanks-============-->
+
+
+<div class="modal" id="modal-thanks">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+
+        <div class="modal-title G-flex-column G-align-center">
+            <h2>благодарим за запрос!</h2>
+            <p>Наш специалист свяжется с вами в ближайшее время</p>
+        </div>
+        <div class="contact-item">
+            <button class="btn">Вернуться</button>
+        </div>
+    </div>
+</div>
+
 
 <script src="assets/js/jquery-3.6.4.js"></script>
 <script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>

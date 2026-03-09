@@ -109,8 +109,33 @@ $('.map-menu ul li').on('click', function () {
 
 
 
+const openButtons = document.querySelectorAll('.open-modal');
+const modals = document.querySelectorAll('.modal');
 
+openButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const id = btn.dataset.modal;
+        const modal = document.getElementById(id);
+        modal.classList.add('active');
+        document.body.classList.add('modal-open'); // блокируем скролл
+    });
+});
 
+modals.forEach(modal => {
+    const closeBtn = modal.querySelector('.modal-close');
 
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.classList.remove('modal-open'); // разблокируем скролл
+    }
 
+    // закрытие по крестик
+    closeBtn.addEventListener('click', closeModal);
 
+    // закрытие по пустому месту
+    modal.addEventListener('click', (e) => {
+        if(!e.target.closest('.modal-content')){
+            closeModal();
+        }
+    });
+});
