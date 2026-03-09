@@ -1,0 +1,262 @@
+
+.blog-page{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.blog-page .blog-boxes:nth-child(1),
+.blog-page .blog-boxes:nth-child(2){
+    width: calc(50% - 6px);
+}
+.blog-page .blog-boxes{
+    width: calc(25% - 6px);
+}
+
+.blog-page-btn{
+    margin-top: 60px;
+}
+
+
+
+.blog-passport-main{
+    background: rgba(255, 255, 255, 1);
+    border-radius: 40px;
+    padding: 16px 16px 0;
+    z-index: 5;
+    position: relative;
+}
+.blog-passport{
+    max-width: 1900px;
+    width: 100%;
+    margin: 0 auto;
+}
+.blog-passport img{
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+}
+
+.blog-passport-flex{
+    margin-top: 100px;
+    gap: 50px;
+}
+.blog-passport-cnt{
+    max-width: 620px;
+    width: 100%;
+    gap: 80px;
+}
+
+.passport-user img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 24px 0;
+}
+
+.passport-user p{
+    margin-top: 4px;
+    color: rgba(21, 50, 118, 0.2);
+}
+.passport-tab{
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.passport-name{
+    width: 100%;
+    border-bottom: 1px solid rgba(21, 50, 118, 0.2);
+    padding-bottom: 24px;
+}
+.passport-name ul{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.passport-name ul li{
+    display: flex;
+    width: 24px;
+}
+.passport-name ul li i{
+    width: 100%;
+}
+.regulation-pass ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.regulation-pass ul li:first-child{
+    border-bottom: 1px solid rgba(21, 50, 118, 0.2);
+    padding-bottom: 20px;
+    color: rgba(21, 50, 118, 1);
+
+}
+
+.regulation-pass ul li{
+    color: rgba(21, 50, 118, 0.2);
+}
+
+.blog-passport-info{
+    max-width: 1000px;
+    width: 100%;
+    gap: 16px;
+}
+.blog-passport-info h3 {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+.pass-visa-photo{
+    margin-top: 44px;
+}
+.pass-visa-photo img{
+    width: 100%;
+    border-radius: 16px;
+}
+.pass-visa-arrow{
+    margin-top: 60px;
+    width: 100%;
+}
+.pass-visa-arrow .messenger-social {
+    margin-top: 0;
+}
+.pass-visa-arrow .scroll-up {
+    background: rgba(241, 245, 246, 1);
+
+    position: relative;
+}
+
+@media (max-width: 1599px){
+    .blog-passport-main {
+        border-radius: 18px;
+        padding: 12px 12px 0;
+    }
+    .blog-passport img {
+        border-radius: 18px 18px 0 0;
+    }
+    .blog-passport-flex {
+        margin-top: 75px;
+    }
+    .blog-passport-cnt {
+        max-width: 465px;
+        gap: 60px;
+    }
+    .blog-passport-info {
+        max-width: 750px;
+        gap: 12px;
+    }
+    .passport-user img {
+        width: 75px;
+        height: 75px;
+        margin: 18px 0;
+    }
+    .passport-name {
+        padding-bottom: 18px;
+    }
+    .passport-tab {
+        gap: 18px;
+    }
+    .passport-name ul li {
+        width: 18px;
+    }
+    .passport-name ul{
+        gap: 3px;
+    }
+    .regulation-pass ul {
+        gap: 15px;
+    }
+    .regulation-pass ul li:first-child {
+        padding-bottom: 15px;
+    }
+    .blog-passport-info h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .pass-visa-photo {
+        margin-top: 33px;
+    }
+    .pass-visa-arrow {
+        margin-top: 45px;
+    }
+
+}
+
+
+@media(max-width: 1199px){
+    .blog-page .blog-boxes {
+        width: calc(33.333333% - 6px);
+    }
+    .blog-page-btn {
+        margin-top: 40px;
+    }
+    .blog-passport-cnt {
+        max-width: 390px;
+    }
+}
+@media(max-width: 1020px){
+    .blog-page .blog-boxes:nth-child(1) {
+        width: 100%;
+    }
+    .blog-page .blog-boxes {
+        width: calc(50% - 6px);
+    }
+    .blog-page{
+        justify-content: center;
+    }
+    .blog-page-btn .btn{
+        width: 100%;
+    }
+    .blog-passport-flex {
+        margin-top: 40px;
+        gap: 80px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog-passport-cnt {
+        max-width: 690px;
+    }
+    .regulation-pass{
+        display: none;
+    }
+    .pass-visa-arrow {
+        margin-top: 30px;
+    }
+    .blog-passport-main {
+        padding: 6px 0 0;
+    }
+    .blog-passport{
+        padding: 0 6px;
+    }
+}
+
+
+@media (max-width: 575px){
+    .blog-page .blog-boxes {
+        width: 100%;
+    }
+    .blog-page .blog-boxes:nth-child(1), .blog-page .blog-boxes:nth-child(2) {
+        width: 100%;
+    }
+
+
+    .blog-page .blog-boxes{
+        display: none;
+    }
+
+    .blog-page .blog-boxes:nth-child(1),
+    .blog-page .blog-boxes:nth-child(2),
+    .blog-page .blog-boxes:nth-child(3),
+    .blog-page .blog-boxes:nth-child(4) {
+        display: flex;
+    }
+    .passport-name {
+        padding-bottom: 16px;
+    }
+
+    .passport-tab {
+        gap: 16px;
+    }
+    .pass-visa-photo {
+        margin-top: 28px;
+    }
+
+}

@@ -18,6 +18,7 @@
 
 .banner-head h1{
     font-size: 72px;
+    text-align: center;
     color: rgba(255, 255, 255, 1);
 }
 .bread-caps ul{
@@ -34,7 +35,7 @@
 
 .services-page-main{
     background: rgba(255, 255, 255, 1);
-    border-radius: 40px;
+    border-radius: 40px 40px 0 0;
     padding: 100px 0;
     z-index: 5;
     position: relative;
@@ -149,24 +150,6 @@
 
 
 
-.blog-page{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.blog-page .blog-boxes:nth-child(1),
-.blog-page .blog-boxes:nth-child(2){
-    width: calc(50% - 6px);
-}
-.blog-page .blog-boxes{
-    width: calc(25% - 6px);
-}
-
-.blog-page-btn{
-    margin-top: 60px;
-}
-
 
 @media (max-width: 1599px){
     .services-page-name h3 {
@@ -220,7 +203,9 @@
     .details-tap ul li {
         padding-bottom: 18px;
     }
-
+    .banner-head h1 {
+        font-size: 54px;
+    }
 }
 @media (max-width: 1199px){
     .services-page-main {
@@ -242,12 +227,7 @@
     .download-boxes .btn {
         border-radius: 12px;
     }
-    .blog-page .blog-boxes {
-        width: calc(33.333333% - 6px);
-    }
-    .blog-page-btn {
-        margin-top: 40px;
-    }
+
 
 }
 @media (max-width: 1020px){
@@ -317,18 +297,7 @@
     .details-tap ul li span {
         max-width: 370px;
     }
-    .blog-page .blog-boxes:nth-child(1) {
-        width: 100%;
-    }
-    .blog-page .blog-boxes {
-        width: calc(50% - 6px);
-    }
-    .blog-page{
-        justify-content: center;
-    }
-    .blog-page-btn .btn{
-        width: 100%;
-    }
+
 }
 @media (max-width: 767px){
     .banner-head h1 {
@@ -369,22 +338,5 @@
     .details-tap ul li p {
         font-size: 12px;
     }
-    .blog-page .blog-boxes {
-        width: 100%;
-    }
-    .blog-page .blog-boxes:nth-child(1), .blog-page .blog-boxes:nth-child(2) {
-        width: 100%;
-    }
 
-
-    .blog-page .blog-boxes{
-        display: none;
-    }
-
-    .blog-page .blog-boxes:nth-child(1),
-    .blog-page .blog-boxes:nth-child(2),
-    .blog-page .blog-boxes:nth-child(3),
-    .blog-page .blog-boxes:nth-child(4) {
-        display: flex;
-    }
 }

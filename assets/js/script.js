@@ -29,7 +29,7 @@ $(function () {
         $next.slideToggle();
         if (!e.data.multiple) {
 
-            $el.find('.submenu').not($next).slideUp();
+            $el.find('.accordion-ext').not($next).slideUp();
         }
         if (!$this.hasClass('open')) {
             $('.link').each(function () {
