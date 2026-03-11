@@ -1,0 +1,496 @@
+
+.bank-accounts{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 109px 0 166px;
+}
+
+.bank-accounts:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 50, 118, 0.2);
+
+}
+.bank-accounts-fon{
+    max-width: 762px;
+    width: 100%;
+    border-radius: 24px;
+    padding: 80px 60px 60px;
+    background: rgba(255, 255, 255, 1);
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.bread-caps ul li {
+    color: rgba(21, 50, 118, 1);
+
+}
+.bread-caps ul a {
+    color: rgba(21, 50, 118, 0.2);
+
+}
+.bank-accounts-fon h1{
+    text-align: center;
+    margin-top: 24px;
+}
+
+
+.bank-accounts-fon p{
+    text-align: center;
+    margin-top: 32px;
+}
+
+
+.bank-accounts-fon .btn{
+    margin-top: 32px;
+}
+
+
+
+.foreign-account{
+    z-index: 2;
+    margin-top: -55px;
+    background: rgba(21, 50, 118, 1);
+    border-radius: 40px 40px 0 0;
+    padding: 126px 0 100px;
+}
+
+.foreign-account-title h2{
+    color: rgba(255, 255, 255, 1);
+    max-width: 564px;
+    width: 100%;
+}
+.foreign-account-title p{
+    color: rgba(255, 255, 255, 1);
+    max-width: 712px;
+    width: 100%;
+}
+
+.foreign-account-wrap{
+    margin-top: 124px;
+    gap: 8px;
+}
+
+.foreign-account-box{
+    width: calc(25% - 6px);
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 490px;
+}
+
+.foreign-account-box strong{
+    font-size: 32px;
+}
+.foreign-design{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+
+
+
+.concept-dual-fon{
+    background: linear-gradient(0deg, #F1F5F6, #F1F5F6),
+    linear-gradient(0deg, #F1F5F6 0%, rgba(241, 245, 246, 0) 40.94%, #F1F5F6 77.82%);
+    padding: 100px 0;
+}
+
+.concept-dual-fon .concept-box {
+    background: rgba(255, 255, 255, 1);
+}
+.concept-dual-fon .concept-box .concept-icon{
+    background: rgba(241, 245, 246, 1);
+}
+
+
+.know-more-main {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 80px;
+    background-position: center;
+}
+.know-more-main:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #153276, #153276),
+    linear-gradient(270deg, rgba(21, 50, 118, 0) 59.74%, #153276 86.41%);
+    opacity: 0.90;
+}
+.know-more-flex{
+    position: relative;
+    z-index: 1;
+}
+
+.know-more-info{
+    max-width: 380px;
+    width: 100%;
+}
+.know-more-info h2{
+    color: rgba(255, 255, 255, 1);
+
+}
+.know-more-info p{
+    color: rgba(255, 255, 255, 1);
+    margin-top: 16px;
+}
+.know-more-info .btn-white{
+    margin-top: 32px;
+}
+
+.know-more-btn{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+.services-sect{
+    margin-top: 100px;
+}
+
+
+.services-sect .services-page-col{
+    margin-top: 80px;
+}
+
+
+.required-bank{
+    margin-top: 100px;
+}
+.required-bank h2{
+    text-align: center;
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+}
+.required-bank-rel{
+    margin-top: 64px;
+    position: relative;
+}
+
+.required-bank-rel .required-button-prev,
+.required-bank-rel .required-button-next{
+    box-shadow: 0px 5px 5px 0px rgba(19, 32, 62, 0.15);
+    background: rgba(255, 255, 255, 1);
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+
+}
+.required-bank-rel .swiper-slide{
+    height: auto;
+}
+
+
+.required-box{
+    width: 100%;
+    background: rgba(241, 245, 246, 1);
+    border-radius: 24px;
+    padding: 8px 8px 32px;
+    height: 100%;
+
+}
+.required-photo{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 231px;
+}
+.required-photo img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+
+.requi-maximize{
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.09);
+    background: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+.icon-maximize{
+    width: 24px;
+    content: url("../img/icons/maximize-2.svg");
+}
+
+.required-text{
+    padding: 45px 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.required-text h4{
+    text-align: center;
+}
+.required-text p{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1599px){
+    .bank-accounts-fon {
+        max-width: 571px;
+        border-radius: 18px;
+        padding: 60px 45px 45px;
+    }
+    .bank-accounts-fon h1 {
+        margin-top: 17px;
+    }
+    .bank-accounts-fon .btn {
+        margin-top: 22px;
+    }
+    .bank-accounts {
+        padding: 80px 0 124px;
+    }
+    .foreign-account {
+        margin-top: -44px;
+        border-radius: 30px 30px 0 0;
+        padding: 95px 0 74px;
+    }
+    .foreign-account-title h2 {
+        max-width: 403px;
+    }
+
+    .foreign-account-title p {
+        max-width: 490px;
+        margin-right: 90px;
+    }
+    .foreign-account-wrap {
+        margin-top: 90px;
+    }
+    .foreign-account-box {
+        border-radius: 18px;
+        padding: 24px;
+        min-height: 370px;
+    }
+    .foreign-account-box strong {
+        font-size: 24px;
+    }
+    .required-bank {
+        margin-top: 75px;
+    }
+    .required-bank h2 {
+        max-width: 550px;
+    }
+    .required-bank-rel {
+        margin-top: 48px;
+    }
+    .required-photo img {
+        border-radius: 12px;
+    }
+    .required-photo {
+        height: 173px;
+    }
+    .requi-maximize {
+        border-radius: 6px;
+        width: 48px;
+        height: 48px;
+        bottom: 6px;
+        right: 6px;
+    }
+    .icon-maximize {
+        width: 18px;
+    }
+    .required-text {
+        padding: 30px 18px 0;
+        gap: 12px;
+    }
+    .required-bank-rel .required-button-prev, .required-bank-rel .required-button-next {
+        width: 48px;
+        height: 48px;
+        border-radius: 6px;
+    }
+    .required-box {
+        border-radius: 18px;
+        padding: 6px 6px 24px;
+    }
+
+    .know-more-main {
+        padding: 76px 0 62px;
+    }
+    .know-more-info .btn-white {
+        margin-top: 24px;
+    }
+    .know-more-info p {
+        margin-top: 12px;
+    }
+    .services-sect {
+        margin-top: 75px;
+    }
+    .services-sect .services-page-col {
+        margin-top: 62px;
+    }
+
+}
+@media (max-width: 1199px){
+    .know-more-flex {
+        flex-direction: column;
+        gap: 98px;
+        align-items: flex-start;
+    }
+    .know-more-info p{
+        max-width: 350px;
+        width: 100%;
+        margin-top: 0;
+    }
+    .know-more-info {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-left: 20px;
+    }
+    .know-more-info h2 {
+        max-width: 220px;
+        width: 100%;
+    }
+    .foreign-account-title p {
+        max-width: 441px;
+        margin-right: 0;
+    }
+
+}
+@media (max-width: 1020px){
+    .foreign-account-title{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .foreign-account-box {
+        border-radius: 18px;
+        padding: 24px;
+        width: calc(50% - 6px);
+        min-height: 370px;
+    }
+
+    .foreign-account-wrap {
+        margin-top: 55px;
+    }
+    .required-bank{
+        overflow: hidden;
+    }
+    .required-slider{
+        overflow: unset;
+    }
+    .concept-dual-fon{
+        background: unset;
+    }
+
+    .concept-dual-fon .concept-box {
+        background: rgba(241, 245, 246, 1);
+
+    }
+    .concept-dual-fon .concept-box .concept-icon{
+        background: rgba(255, 255, 255, 1);
+
+    }
+}
+@media (max-width: 767px){
+    .bank-accounts {
+        padding: 130px 0 131px;
+        background-position: center;
+    }
+
+    .foreign-account {
+        margin-top: -34px;
+        padding: 32px 0 32px;
+    }
+    .foreign-account-wrap {
+        margin-top: 40px;
+    }
+    .foreign-account-box {
+        min-height: 300px;
+    }
+    .know-more-info {
+        padding-left: 0;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .know-more-info .btn-white{
+        display: none;
+    }
+
+    .know-more-btn{
+        display: flex;
+        margin-top: 8px;
+        padding-right: 24px;
+    }
+    .know-more-flex {
+        gap: 40px;
+    }
+    .services-sect .services-page-col {
+        margin-top: 32px;
+    }
+    .know-more-main .container{
+        padding-right: 0;
+    }
+
+    .bank-accounts-fon h1 {
+        margin-top: 67px;
+    }
+
+
+
+}
+@media (max-width: 570px){
+    .bank-accounts-fon {
+        padding: 24px 8px 8px;
+    }
+    .bank-accounts-fon p {
+        margin-top: 15px;
+        margin-bottom: 52px;
+    }
+    .bread-caps ul li {
+        font-size: 15px;
+    }
+    .foreign-account-box {
+        width: 100%;
+        min-height: 300px;
+    }
+    .concept-dual-fon {
+        padding: 60px 0;
+    }
+
+}

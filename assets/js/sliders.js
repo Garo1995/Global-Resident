@@ -60,6 +60,7 @@ let partnerSwiper = new Swiper(".partner-slider", {
     },
 });
 
+
 let blogSwiper = new Swiper(".blog-slider", {
     slidesPerView: "auto",
     spaceBetween: 8,
@@ -72,3 +73,224 @@ let blogSwiper = new Swiper(".blog-slider", {
         prevEl: ".blog-button-prev",
     },
 });
+
+
+
+
+
+
+
+
+
+let requiredSwiper = new Swiper(".required-slider", {
+    slidesPerView: 4,
+    spaceBetween: 8,
+    breakpoints: {
+        1199: {
+            slidesPerView: 4,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+
+        1020: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        767: {
+            slidesPerView: 2.3,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        570: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+            loop: true,
+            centeredSlides: true,
+        },
+        320: {
+            slidesPerView: 1.2,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+            loop: true,
+            centeredSlides: true,
+        },
+    },
+    navigation: {
+        nextEl: ".required-button-next",
+        prevEl: ".required-button-prev",
+    },
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let teamSwiper = new Swiper(".our-team-slider", {
+    slidesPerView: 6,
+    spaceBetween: 8,
+    loop: true,
+    breakpoints: {
+        1199: {
+            slidesPerView: 6,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        1020: {
+            slidesPerView: 4,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        767: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        570: {
+            slidesPerView: 2.5,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        320: {
+            slidesPerView: 2.1,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+    },
+    navigation: {
+        nextEl: ".team-button-next",
+        prevEl: ".team-button-prev",
+    },
+});
+
+
+let companySwiper = new Swiper(".company-cert-slider", {
+    slidesPerView: 4,
+    spaceBetween: 8,
+    loop: true,
+    centeredSlides: true,
+
+    breakpoints: {
+        1199: {
+            slidesPerView: 4,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        1020: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        767: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        570: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        320: {
+            slidesPerView: 1.4,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+    },
+    navigation: {
+        nextEl: ".company-button-next",
+        prevEl: ".company-button-prev",
+    },
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+let estateSwiper = new Swiper(".real-estate-sm-slider", {
+    spaceBetween: 8,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+
+    breakpoints: {
+        1599: {
+            slidesPerView: 4,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+
+        320: {
+            slidesPerView: 4,
+            spaceBetween: 6,
+        },
+    },
+});
+let estateSwiperSm = new Swiper(".real-estate-slider", {
+    spaceBetween: 8,
+    slidesPerView: 1.8,
+    breakpoints: {
+        1599: {
+            spaceBetween: 8,
+            slidesPerView: 1.8,
+        },
+
+        1299: {
+            spaceBetween: 8,
+            slidesPerView: 1.6,
+        },
+        575: {
+            spaceBetween: 8,
+            slidesPerView: 1.2,
+        },
+        320: {
+            spaceBetween: 8,
+            slidesPerView: 1,
+        },
+    },
+    navigation: {
+        nextEl: ".estate-next",
+        prevEl: ".estate-prev",
+    },
+    thumbs: {
+        swiper: estateSwiper,
+    },
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+

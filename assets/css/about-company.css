@@ -1,0 +1,487 @@
+.immigration-main{
+    width: 100%;
+}
+.immigration-main .bread-caps{
+    display: none;
+}
+.immigration-photo img{
+    width: 100%;
+}
+
+.immigration-fon{
+    background: rgba(255, 255, 255, 1);
+    border-radius: 40px 40px 0 0;
+    padding: 80px 0 118px;
+    margin-top: -200px;
+    z-index: 3;
+    position: relative;
+}
+.immigration-title{
+    gap: 70px;
+}
+.immigration-title h2{
+    max-width: 795px;
+    width: 100%;
+    font-size: 64px;
+}
+.immigration-title p{
+    max-width: 677px;
+    width: 100%;
+}
+
+.immigration-flex{
+    margin-top: 123px;
+    gap: 8px;
+}
+.immigration-box{
+    width: calc(25% - 6px);
+    background: rgba(241, 245, 246, 1);
+    min-height: 240px;
+    border-radius: 16px;
+    padding: 24px 32px;
+    position: relative;
+}
+.immigration-box:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 16px 0 0 16px;
+    background: rgba(21, 50, 118, 1);
+    width: 8px;
+    height: 100%;
+}
+.immigration-box strong{
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+
+}
+.about-us-pages{
+    padding: 100px 0;
+    background: rgba(241, 245, 246, 1);
+
+}
+.about-page-title{
+    gap: 20px;
+}
+.about-page-title h2{
+    font-size: 64px;
+}
+.about-page-text{
+    gap: 12px;
+    max-width: 855px;
+    width: 100%;
+}
+
+.mission-values{
+    padding: 100px 0;
+}
+.mission-values-title{
+    max-width: 1465px;
+    width: 100%;
+}
+.mission-values-title h2{
+    font-size: 80px;
+
+}
+.mission-values-title p{
+    max-width: 600px;
+    width: 100%;
+}
+.mission-values-flex{
+    margin-top: 60px;
+    gap: 8px;
+}
+.mission-values-photo{
+    max-width: 856px;
+    width: 100%;
+    padding: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    height: 763px;
+
+}
+.mission-values-pic {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.mission-values-pic img{
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+
+}
+.mission-values-text{
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    border-radius: 8px;
+    gap: 24px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    min-height: 260px;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+.our-team-main{
+    background: rgba(241, 245, 246, 1);
+    padding: 100px 0;
+    overflow: hidden;
+}
+.our-team-slider{
+    width: 100%;
+    overflow: unset;
+}
+.our-team-relative{
+    margin-top: 60px;
+    position: relative;
+}
+
+
+
+.company-cert{
+    padding: 100px 0;
+
+    overflow: hidden;
+}
+.company-cert-slider{
+    overflow: unset;
+}
+.company-cert-slider .swiper-slide{
+    height: auto;
+}
+.company-cert h2{
+    text-align: center;
+}
+.company-cert-rel{
+    position: relative;
+    margin-top: 60px;
+}
+.company-cert-box{
+    background: rgba(241, 245, 246, 1);
+    width: 100%;
+    border-radius: 16px;
+    height: 100%;
+    padding: 8px;
+}
+.company-cert-photo{
+    display: flex;
+}
+.company-cert-photo img{
+    width: 100%;
+    border-radius: 8px;
+}
+.company-cert-name{
+    padding: 24px 16px 24px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1599px){
+    .immigration-fon {
+        border-radius: 30px 30px 0 0;
+        padding: 60px 0 89px;
+        margin-top: -140px;
+    }
+    .immigration-title h2 {
+        max-width: 595px;
+        font-size: 48px;
+    }
+    .immigration-title {
+        gap: 50px;
+    }
+    .immigration-title p {
+        max-width: 508px;
+    }
+    .immigration-flex {
+        margin-top: 91px;
+        gap: 8px;
+    }
+    .immigration-box:before {
+        width: 6px;
+    }
+    .immigration-box {
+        width: calc(25% - 6px);
+        min-height: 180px;
+        border-radius: 12px;
+        padding: 18px 24px;
+    }
+    .immigration-box strong {
+        font-size: 36px;
+    }
+    .about-us-pages {
+        padding: 75px 0;
+    }
+    .about-page-title h2 {
+        font-size: 48px;
+    }
+    .about-page-text {
+        max-width: 644px;
+    }
+    .mission-values {
+        padding: 75px 0;
+    }
+
+    .mission-values-title h2 {
+        font-size: 48px;
+    }
+    .mission-values-title {
+        max-width: 1100px;
+    }
+    .mission-values-title p {
+        max-width: 450px;
+    }
+
+    .mission-values-flex {
+        margin-top: 73px;
+        gap: 6px;
+    }
+    .mission-values-photo {
+        height: 575px;
+        padding: 6px;
+        border-radius: 12px;
+    }
+    .mission-values-text {
+        border-radius: 8px;
+        gap: 18px;
+        padding: 24px;
+        min-height: 196px;
+    }
+    .our-team-main{
+        padding: 75px 0;
+    }
+    .concept-dual-fon {
+        padding: 75px 0;
+    }
+    .company-cert {
+        padding: 75px 0;
+    }
+
+    .company-cert-rel {
+        margin-top: 45px;
+    }
+    .company-cert-name {
+        padding: 18px 10px 24px;
+    }
+
+
+
+}
+
+@media (max-width: 1399px) {
+
+    .mission-values-title {
+        max-width: 1056px;
+    }
+    .mission-values-photo {
+        height: 499px;
+    }
+    .mission-values-flex {
+        margin-top: 60px;
+    }
+
+
+}
+@media (max-width: 1299px) {
+    .immigration-title {
+        gap: 24px;
+        flex-direction: column;
+    }
+
+    .immigration-fon {
+        padding: 60px 0 60px;
+        margin-top: -25px;
+    }
+    .immigration-title h2 {
+        max-width: 607px;
+    }
+    .immigration-flex {
+        margin-top: 56px;
+    }
+
+    .about-us-pages {
+        padding: 60px 0;
+    }
+    .about-page-title {
+        gap: 48px;
+        flex-direction: column;
+    }
+    .about-page-text {
+        max-width: 844px;
+    }
+
+    .mission-values-title {
+        max-width: 1056px;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .mission-values-title h2 br{
+        display: none;
+    }
+    .mission-values-title p {
+        max-width: 750px;
+    }
+
+}
+@media (max-width: 1199px) {
+    .immigration-box {
+        width: calc(50% - 6px);
+    }
+    .mission-values-photo {
+        height: 613px;
+    }
+    .mission-values-photo {
+        max-width: 100%;
+    }
+    .mission-values-flex {
+        margin-top: 60px;
+        flex-direction: column;
+    }
+
+
+}
+@media (max-width: 1020px) {
+    .immigration-photo img {
+        height: 497px;
+        object-fit: cover;
+        object-position: 19%;
+    }
+    .company-cert {
+        padding: 120px 0 40px;
+    }
+
+    .immigration-fon {
+        padding: 40px 10px 28px;
+    }
+    .immigration-title h2 {
+        max-width: 408px;
+        font-size: 32px;
+    }
+    .concept-dual-fon {
+        padding: 60px 0;
+        background: unset;
+    }
+}
+@media (max-width: 767px) {
+    .immigration-box strong {
+        font-size: 28px;
+    }
+    .immigration-flex {
+        margin-top: 45px;
+    }
+
+    .about-page-title h2 {
+        font-size: 28px;
+    }
+    .about-page-title {
+        gap: 24px;
+    }
+    .mission-values-title h2 {
+        font-size: 28px;
+    }
+    .mission-values-title {
+        gap: 16px;
+    }
+
+    .about-us-pages {
+        padding: 56px 0 40px;
+    }
+    .mission-values {
+        padding: 40px 0;
+    }
+    .mission-values-flex {
+        margin-top: 32px;
+    }
+    .mission-values-photo {
+        height: 486px;
+    }
+    .mission-values-text {
+        gap: 12px;
+        min-height: auto;
+    }
+    .our-team-main {
+        padding: 40px 0;
+    }
+    .company-cert {
+        padding: 80px 0 40px;
+    }
+
+
+
+}
+@media (max-width: 570px){
+    .immigration-photo img {
+        height: 208px;
+        object-position: 33%;
+    }
+    .immigration-main {
+        padding-top: 30px;
+    }
+    .immigration-main .bread-caps{
+        display: flex;
+        justify-content: center;
+    }
+    .immigration-photo{
+        margin-top: 150px;
+    }
+    .immigration-fon {
+        padding: 40px 0 28px;
+        border-radius: 24px 24px 0 0;
+    }
+
+    .immigration-title h2 {
+        max-width: 275px;
+        font-size: 28px;
+    }
+    .immigration-title {
+        gap: 16px;
+    }
+    .immigration-box {
+        width: 100%;
+        min-height: 139px;
+    }
+
+    .mission-values-photo {
+        height: auto;
+        padding: 0;
+        flex-direction: column;
+        background: linear-gradient(180deg, rgba(8, 9, 12, 0) 48.2%, #08090C 53.91%);
+        align-items: flex-start;
+    }
+    .mission-values-pic {
+        position: relative;
+    }
+    .mission-values-text {
+        margin-top: -32px;
+        bottom: 8px;
+        left: 8px;
+        width: calc(100% - 16px);
+    }
+    .swiper-button-prev{
+        left: 0;
+    }
+    .swiper-button-next{
+        right: 0;
+    }
+    .company-cert {
+        padding: 20px 0 40px;
+    }
+
+}

@@ -260,3 +260,108 @@
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========-delivery-html-===========*/
+
+
+
+
+.rayment-services-wrap{
+    margin-top: 40px;
+    gap: 8px;
+}
+
+.rayment-services{
+    margin-top: 120px;
+}
+.rayment-services-box{
+    width: calc(25% - 6px);
+    background: rgba(241, 245, 246, 1);
+    border-radius: 24px;
+
+}
+.rayment-services-center{
+    width: 100%;
+    height: 250px;
+}
+.rayment-services-name{
+    padding: 32px 32px 45px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1599px){
+    .rayment-services-center {
+        height: 189px;
+    }
+    .rayment-services-name {
+        padding: 32px 24px;
+        gap: 9px;
+    }
+
+    .rayment-services-wrap {
+        margin-top: 30px;
+    }
+    .rayment-services-box {
+        border-radius: 18px;
+    }
+    .rayment-services {
+        margin-top: 90px;
+    }
+
+}
+@media (max-width: 1199px){
+    .rayment-services-box {
+        width: calc(33.333333% - 6px);
+    }
+}
+@media (max-width: 1020px){
+    .rayment-services-box {
+        width: calc(50% - 6px);
+    }
+    .rayment-services-name {
+        padding: 24px 24px;
+        gap: 9px;
+    }
+    .rayment-services-wrap {
+        margin-top: 48px;
+    }
+
+}
+@media (max-width: 767px){
+    .rayment-services-wrap {
+        margin-top: 32px;
+    }
+}
+@media (max-width: 575px){
+    .rayment-services-box {
+        width: 100%;
+    }
+    .rayment-services {
+        margin-top: 80px;
+    }
+}

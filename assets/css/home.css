@@ -15,7 +15,12 @@ h2{
 h3{
     font-size: 32px;
 }
-p, span, a, input, ul li, small, textarea{
+h4{
+    font-size: 24px;
+    text-transform: unset;
+
+}
+p, span, a, input, ul li, small, strong, textarea{
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
@@ -226,8 +231,10 @@ button, .btn, .btn-white{
     width: 54px;
     height: 54px;
     transition: 0.3s;
-    background: rgba(241, 245, 246, 1);
     border-radius: 8px;
+    box-shadow: 1px 5px 5px 0px rgba(41, 69, 80, 0.03);
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(241, 245, 246, 1);
 }
 
 .countries-flex .swiper-button-prev, .countries-flex .swiper-button-next{
@@ -237,6 +244,9 @@ button, .btn, .btn-white{
     position: relative;
     right: 0;
     left: 0;
+    background: rgba(241, 245, 246, 1);
+    border: unset;
+    box-shadow: unset;
 }
 
 .countries-href{
@@ -665,7 +675,6 @@ button, .btn, .btn-white{
     width: 54px;
     height: 54px;
     transition: 0.3s;
-    background: rgba(241, 245, 246, 1);
     border-radius: 8px;
 }
 .blog-slider .swiper-slide {
@@ -1066,7 +1075,7 @@ footer{
 
 @media (max-width: 1599px){
 
-    p, span, a, input, ul li, small, textarea{
+    p, span, a, input, ul li, small, strong,  textarea{
         font-size: 15px;
 
     }
@@ -1153,8 +1162,8 @@ footer{
         font-size: 14px;
     }
     .swiper-button-next, .swiper-button-prev {
-        width: 41px;
-        height: 41px;
+        width: 48px;
+        height: 48px;
         border-radius: 6px;
     }
     .icon-arrow-left {
@@ -1203,6 +1212,9 @@ footer{
     }
     h3 {
         font-size: 24px;
+    }
+    h4{
+        font-size: 18px;
     }
     .services-items {
         max-width: 630px;
@@ -1789,11 +1801,7 @@ footer{
         width: 128px;
         height: 34px;
     }
-    .swiper-button-next, .swiper-button-prev {
-        width: 34px;
-        height: 34px;
-        border-radius: 4px;
-    }
+
     .live-residency h2 {
         max-width: 200px;
         font-size: 30px;
@@ -1992,6 +2000,12 @@ footer{
     p {
         font-size: 12px;
     }
+    .swiper-button-next, .swiper-button-prev {
+        width: 34px;
+        height: 34px;
+        border-radius: 4px;
+    }
+
     .live-dream-title .btn {
         margin-top: 18px;
         max-width: 380px;
@@ -2314,9 +2328,7 @@ footer{
         align-items: center;
         justify-content: center;
     }
-    .reliable-box-photo img {
-        height: 144px;
-    }
+
     .reliable-name h4 {
         font-size: 12px;
     }
@@ -2380,7 +2392,16 @@ footer{
         top: 21px;
         right: 21px;
     }
-    p, span, a, input, ul li, small {
+    p, span, a, input, ul li, small, textarea {
         font-size: 12px;
+    }
+
+
+
+
+}
+@media (max-width: 420px){
+    .reliable-box-photo img {
+        height: 144px;
     }
 }

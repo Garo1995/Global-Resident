@@ -30,9 +30,7 @@
     height: 32px;
     border-radius: 50%;
 }
-.cases-country-name h4{
-    font-size: 24px;
-}
+
 .cases-text-wid{
     max-width: 200px;
     width: 100%;
@@ -157,9 +155,7 @@
         width: 24px;
         height: 24px;
     }
-    .cases-country-name h4 {
-        font-size: 18px;
-    }
+
     .cases-country-name {
         gap: 12px;
         max-width: 150px;
