@@ -12,38 +12,47 @@ jQuery('.scroll-up').click(function() {
 
 
 
-
-
 $(function () {
+
     let Accordion = function (el, multiple) {
         this.el = el || {};
         this.multiple = multiple || false;
+
         let links = this.el.find('.link');
-        links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+        links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown);
+
+        // 👉 если есть .active — открыть его при загрузке
+        this.el.find('.link.active').each(function () {
+            $(this)
+                .addClass('open')
+                .next('.accordion-ext')
+                .show();
+        });
     };
 
     Accordion.prototype.dropdown = function (e) {
-        let $el = e.data.el;
-        $this = $(this),
-            $next = $this.next();
-        $next.slideToggle();
-        if (!e.data.multiple) {
 
+        let $el = e.data.el;
+        let $this = $(this);
+        let $next = $this.next('.accordion-ext');
+
+        $next.slideToggle();
+
+        if (!e.data.multiple) {
             $el.find('.accordion-ext').not($next).slideUp();
         }
+
         if (!$this.hasClass('open')) {
-            $('.link').each(function () {
-                $(this).removeClass('open')
-            })
-            $this.addClass('open')
+            $el.find('.link').removeClass('open');
+            $this.addClass('open');
         } else {
-            $this.removeClass('open')
+            $this.removeClass('open');
         }
-    }
+    };
+
     let accordion = new Accordion($('#accordion'), false);
+
 });
-
-
 
 
 

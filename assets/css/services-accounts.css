@@ -27,11 +27,11 @@
     z-index: 1;
 }
 
-.bread-caps ul li {
+.bank-accounts-fon .bread-caps ul li {
     color: rgba(21, 50, 118, 1);
 
 }
-.bread-caps ul a {
+.bank-accounts-fon .bread-caps ul a {
     color: rgba(21, 50, 118, 0.2);
 
 }

@@ -1,0 +1,149 @@
+.residency-single{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 109px 0;
+}
+
+.residency-flag {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background: #ffffff;
+    padding: 15px;
+    position: absolute;
+    top: -60px;
+}
+.residency-flag img{
+    width: 100%;
+    border-radius: 50%;
+    height: 90px;
+}
+
+
+.benefic-conv-href{
+    border-radius: 24px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 1);
+    margin: -42px auto 0;
+    width: max-content;
+}
+.benefic-conv-href ul{
+    gap: 8px;
+    display: flex;
+}
+.benefic-conv-href ul li a{
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    white-space: nowrap;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    padding: 24px 40px;
+
+}
+.benefic-conv-href ul li .active-page-res{
+    background: rgba(241, 245, 246, 1);
+
+}
+
+
+
+
+
+.benefic-conv-cnt{
+    margin: 100px 0 0;
+}
+.benefic-conv-cnt h2{
+    text-align: center;
+}
+.benefic-conv-flex{
+    margin: 48px 0;
+    gap: 8px;
+}
+.benefic-conv-box{
+    width: calc(50% - 6px);
+    background: rgba(255, 255, 255, 1);
+    border-radius: 24px;
+    padding: 30px 33px;
+    min-height: 148px;
+    box-shadow: 0px 6px 6px 0px rgba(164, 168, 178, 0.09);
+
+}
+
+.benefic-conv-box h4{
+    max-width: 142px;
+    width: 100%;
+    text-transform: uppercase;
+}
+.benefic-conv-box p{
+    max-width: 380px;
+    width: 100%;
+}
+
+
+.obtain-residence{
+    padding: 100px 0 0;
+    margin-top: 100px;
+}
+.obtain-residence:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 982px;
+    background: rgba(21, 50, 118, 1);
+    border-radius: 40px 40px 0 0;
+}
+.obtain-residence .container{
+    position: relative;
+    z-index: 1;
+}
+.obtain-residence-title{
+    gap: 24px;
+    padding-right: 76px;
+}
+.obtain-residence-title h2{
+    max-width: 288px;
+    width: 100%;
+    color: #ffffff;
+}
+.obtain-residence-title p{
+    color: #ffffff;
+    max-width: 780px;
+    width: 100%;
+}
+
+.obtain-residence .services-cnt {
+    margin-top: 82px;
+}
+
+
+.greek-resid-main{
+    padding: 100px 0;
+}
+.greek-resid-flex{
+    gap: 40px;
+    justify-content: space-between;
+}
+.greek-resid-flex h2{
+    max-width: 327px;
+    width: 100%;
+}
+.greek-resid-wrap{
+    gap: 8px;
+    max-width: 1288px;
+    width: 100%;
+}
+
+.greek-resid-box{
+    background: rgba(241, 245, 246, 1);
+    width: calc(33.333333% - 6px);
+    border-radius: 24px;
+    padding: 32px;
+    height: 375px;
+}
+.greek-resid-box h4{
+    text-transform: uppercase;
+}

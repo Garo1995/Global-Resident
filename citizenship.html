@@ -4625,7 +4625,7 @@
                     <button class="btn">Связаться</button>
                 </div>
             </div>
-            <button class="btn consultation-btn">Консультация</button>
+            <button data-modal="modal" class="open-modal btn consultation-btn">Консультация</button>
             <div class="open-menu">
                 <span></span>
                 <span></span>
@@ -4635,110 +4635,1259 @@
     </div>
 </header>
 
-<section class="banner-global">
+<section class="residency-main">
     <div class="container">
         <div class="banner-head G-flex-column G-align-center">
             <div class="bread-caps">
                 <ul>
                     <li><a href="#">Главная —</a></li>
-                    <li> FAQ </li>
+                    <li> Гражданство </li>
                 </ul>
             </div>
-            <h1>FAQ</h1>
+            <h1>гражданство</h1>
+        </div>
+        <div class="residency-fon">
+            <div class="services-menu">
+                <div class="services-mobile-selected">
+                    Все континенты
+                </div>
+                <ul class="services-mobile-list">
+                    <li class="services-click services-active" data-catalog="continents">Все континенты</li>
+                    <li class="services-click" data-catalog="europe">Европа</li>
+                    <li class="services-click" data-catalog="america">Америка</li>
+                    <li class="services-click" data-catalog="asia">Азия</li>
+                    <li class="services-click" data-catalog="oceania">Океания</li>
+                    <li class="services-click" data-catalog="middleEast">Ближний Восток</li>
+                </ul>
+            </div>
+
+            <div class="services-items">
+                <div class="services-js" data-catalog="continents">
+                    <div class="residency-continents">
+                        <div class="residency-head">
+                            <div class="continents-name">
+                                <span>Страна</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Основания для <br> получения гражданства</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Необходимые условия</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Срок проживания до подачи</span>
+                            </div>
+                        </div>
+                        <div class="residency-body">
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/greece.png" alt="paraguay">
+                                    <h4>Греция</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>7 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Экзамен</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>-</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/germany.png" alt="germany">
+                                    <h4>германия</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/portugal.png" alt="portugal">
+                                    <h4>португалия</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/spain.png" alt="spain">
+                                    <h4>Испания</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/france.png" alt="france">
+                                    <h4>Франция</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Длительная командировка</li>
+                                        <li>2000 $</li>
+                                        <li>4 месяца</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Трудоустройство</li>
+                                        <li>4000 $</li>
+                                        <li>4 месяца</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Окрытие бизнеса</li>
+                                        <li>4000 $</li>
+                                        <li>6-12 месяцев</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-page-btn G-center">
+                        <button class="btn btn-sliver">Показать еще</button>
+                    </div>
+                </div>
+                <div class="services-js" data-catalog="europe">
+                    <div class="residency-continents">
+                        <div class="residency-head">
+                            <div class="continents-name">
+                                <span>Страна</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Основания для <br> получения гражданства</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Необходимые условия</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Срок проживания до подачи</span>
+                            </div>
+                        </div>
+                        <div class="residency-body">
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/greece.png" alt="paraguay">
+                                    <h4>Греция</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>7 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Экзамен</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>-</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/germany.png" alt="germany">
+                                    <h4>германия</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/portugal.png" alt="portugal">
+                                    <h4>португалия</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/spain.png" alt="spain">
+                                    <h4>Испания</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/france.png" alt="france">
+                                    <h4>Франция</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Длительная командировка</li>
+                                        <li>2000 $</li>
+                                        <li>4 месяца</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Трудоустройство</li>
+                                        <li>4000 $</li>
+                                        <li>4 месяца</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Окрытие бизнеса</li>
+                                        <li>4000 $</li>
+                                        <li>6-12 месяцев</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-page-btn G-center">
+                        <button class="btn btn-sliver">Показать еще</button>
+                    </div>
+                </div>
+                <div class="services-js" data-catalog="america">
+                    <div class="residency-continents">
+                        <div class="residency-head">
+                            <div class="continents-name">
+                                <span>Страна</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Основания для <br> получения гражданства</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Необходимые условия</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Срок проживания до подачи</span>
+                            </div>
+                        </div>
+                        <div class="residency-body">
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/greece.png" alt="paraguay">
+                                    <h4>Греция</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>7 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Экзамен</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>-</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/germany.png" alt="germany">
+                                    <h4>германия</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/portugal.png" alt="portugal">
+                                    <h4>португалия</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/spain.png" alt="spain">
+                                    <h4>Испания</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/france.png" alt="france">
+                                    <h4>Франция</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Длительная командировка</li>
+                                        <li>2000 $</li>
+                                        <li>4 месяца</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Трудоустройство</li>
+                                        <li>4000 $</li>
+                                        <li>4 месяца</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Окрытие бизнеса</li>
+                                        <li>4000 $</li>
+                                        <li>6-12 месяцев</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-page-btn G-center">
+                        <button class="btn btn-sliver">Показать еще</button>
+                    </div>
+                </div>
+                <div class="services-js" data-catalog="asia">
+                    <div class="residency-continents">
+                        <div class="residency-head">
+                            <div class="continents-name">
+                                <span>Страна</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Основания для <br> получения гражданства</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Необходимые условия</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Срок проживания до подачи</span>
+                            </div>
+                        </div>
+                        <div class="residency-body">
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/greece.png" alt="paraguay">
+                                    <h4>Греция</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>7 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Экзамен</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>-</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/germany.png" alt="germany">
+                                    <h4>германия</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/portugal.png" alt="portugal">
+                                    <h4>португалия</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/spain.png" alt="spain">
+                                    <h4>Испания</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/france.png" alt="france">
+                                    <h4>Франция</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Длительная командировка</li>
+                                        <li>2000 $</li>
+                                        <li>4 месяца</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Трудоустройство</li>
+                                        <li>4000 $</li>
+                                        <li>4 месяца</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Окрытие бизнеса</li>
+                                        <li>4000 $</li>
+                                        <li>6-12 месяцев</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-page-btn G-center">
+                        <button class="btn btn-sliver">Показать еще</button>
+                    </div>
+                </div>
+                <div class="services-js" data-catalog="oceania">
+                    <div class="residency-continents">
+                        <div class="residency-head">
+                            <div class="continents-name">
+                                <span>Страна</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Основания для <br> получения гражданства</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Необходимые условия</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Срок проживания до подачи</span>
+                            </div>
+                        </div>
+                        <div class="residency-body">
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/greece.png" alt="paraguay">
+                                    <h4>Греция</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>7 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Экзамен</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>-</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/germany.png" alt="germany">
+                                    <h4>германия</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/portugal.png" alt="portugal">
+                                    <h4>португалия</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/spain.png" alt="spain">
+                                    <h4>Испания</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/france.png" alt="france">
+                                    <h4>Франция</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Длительная командировка</li>
+                                        <li>2000 $</li>
+                                        <li>4 месяца</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Трудоустройство</li>
+                                        <li>4000 $</li>
+                                        <li>4 месяца</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Окрытие бизнеса</li>
+                                        <li>4000 $</li>
+                                        <li>6-12 месяцев</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-page-btn G-center">
+                        <button class="btn btn-sliver">Показать еще</button>
+                    </div>
+                </div>
+                <div class="services-js" data-catalog="middleEast">
+                    <div class="residency-continents">
+                        <div class="residency-head">
+                            <div class="continents-name">
+                                <span>Страна</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Основания для <br> получения гражданства</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Необходимые условия</span>
+                            </div>
+                            <div class="continents-name">
+                                <span>Срок проживания до подачи</span>
+                            </div>
+                        </div>
+                        <div class="residency-body">
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/greece.png" alt="paraguay">
+                                    <h4>Греция</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>7 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Экзамен</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>-</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/germany.png" alt="germany">
+                                    <h4>германия</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/portugal.png" alt="portugal">
+                                    <h4>португалия</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/spain.png" alt="spain">
+                                    <h4>Испания</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Натурализация</li>
+                                        <li>Постоянное проживание</li>
+                                        <li>5 - 8 лет</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Брак</li>
+                                        <li>Интеграция</li>
+                                        <li>-</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Происхождение</li>
+                                        <li>Доход</li>
+                                        <li>-</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                            <div class="residency-boxes">
+                                <div class="cases-country-name G-align-center">
+                                    <img src="./assets/img/flag/france.png" alt="france">
+                                    <h4>Франция</h4>
+                                </div>
+                                <div class="residency-prices">
+                                    <ul>
+                                        <li>Длительная командировка</li>
+                                        <li>2000 $</li>
+                                        <li>4 месяца</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Трудоустройство</li>
+                                        <li>4000 $</li>
+                                        <li>4 месяца</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Окрытие бизнеса</li>
+                                        <li>4000 $</li>
+                                        <li>6-12 месяцев</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-info">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-page-btn G-center">
+                        <button class="btn btn-sliver">Показать еще</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reliable-partner G-align-center G-justify-between">
+            <div class="reliable-partner-rel">
+                <div class="swiper partner-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="reliable-box">
+                                <div class="reliable-box-photo G-flex">
+                                    <img src="./assets/img/reliable-1.png" alt="reliable">
+                                </div>
+                                <div class="reliable-name">
+                                    <div class="reliable-text">
+                                        <h4>София Дефоссе</h4>
+                                        <h4>Генеральный директор Global Resident</h4>
+                                    </div>
+                                    <div class="reliable-flex">
+                                        <a href="#" class="social-link G-center" target="_blank">
+                                            <i class="icon-whatsapp"></i>
+                                        </a>
+                                        <a href="#" class="social-link G-center" target="_blank">
+                                            <i class="icon-telegram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reliable-box">
+                                <div class="reliable-box-photo G-flex">
+                                    <img src="./assets/img/reliable-2.png" alt="reliable">
+                                </div>
+                                <div class="reliable-name">
+                                    <div class="reliable-text">
+                                        <h4>Андрей Жолудь</h4>
+                                        <h4>Руководитель  визового отдела</h4>
+                                    </div>
+                                    <div class="reliable-flex">
+                                        <a href="#" class="social-link G-center" target="_blank">
+                                            <i class="icon-whatsapp"></i>
+                                        </a>
+                                        <a href="#" class="social-link G-center" target="_blank">
+                                            <i class="icon-telegram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reliable-box">
+                                <div class="reliable-box-photo G-flex">
+                                    <img src="./assets/img/reliable-3.png" alt="reliable">
+                                </div>
+                                <div class="reliable-name">
+                                    <div class="reliable-text">
+                                        <h4>Залина Колиева</h4>
+                                        <h4>Визовый консультант</h4>
+                                    </div>
+                                    <div class="reliable-flex">
+                                        <a href="#" class="social-link G-center" target="_blank">
+                                            <i class="icon-whatsapp"></i>
+                                        </a>
+                                        <a href="#" class="social-link G-center" target="_blank">
+                                            <i class="icon-telegram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reliable-box">
+                                <div class="reliable-box-photo G-flex">
+                                    <img src="./assets/img/reliable-3.png" alt="reliable">
+                                </div>
+                                <div class="reliable-name">
+                                    <div class="reliable-text">
+                                        <h4>Залина Колиева</h4>
+                                        <h4>Визовый консультант</h4>
+                                    </div>
+                                    <div class="reliable-flex">
+                                        <a href="#" class="social-link G-center" target="_blank">
+                                            <i class="icon-whatsapp"></i>
+                                        </a>
+                                        <a href="#" class="social-link G-center" target="_blank">
+                                            <i class="icon-telegram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reliable-box">
+                                <div class="reliable-box-photo G-flex">
+                                    <img src="./assets/img/reliable-3.png" alt="reliable">
+                                </div>
+                                <div class="reliable-name">
+                                    <div class="reliable-text">
+                                        <h4>Залина Колиева</h4>
+                                        <h4>Визовый консультант</h4>
+                                    </div>
+                                    <div class="reliable-flex">
+                                        <a href="#" class="social-link G-center" target="_blank">
+                                            <i class="icon-whatsapp"></i>
+                                        </a>
+                                        <a href="#" class="social-link G-center" target="_blank">
+                                            <i class="icon-telegram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reliable-box">
+                                <div class="reliable-box-photo G-flex">
+                                    <img src="./assets/img/reliable-3.png" alt="reliable">
+                                </div>
+                                <div class="reliable-name">
+                                    <div class="reliable-text">
+                                        <h4>Залина Колиева</h4>
+                                        <h4>Визовый консультант</h4>
+                                    </div>
+                                    <div class="reliable-flex">
+                                        <a href="#" class="social-link G-center" target="_blank">
+                                            <i class="icon-whatsapp"></i>
+                                        </a>
+                                        <a href="#" class="social-link G-center" target="_blank">
+                                            <i class="icon-telegram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                <div class="partner-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
+            </div>
+            <h2>“Global Resident –  ваш  надежный  партнер  в  международной  миграции.  делаем сложный  путь к  гражданству  комфортным”</h2>
         </div>
     </div>
+</section>
 
-    <div class="services-page-main faq-pages">
-        <div class="container">
-           <div id="accordion" class="accordion">
-               <div class="accordion-col G-flex-column">
-                   <div class="accordion-box ">
-                       <div class="accordion-click link active">
-                           <h3>Существуют ли какие-либо ограничения на приобретение недвижимости в Греции иностранными покупателями?</h3>
-                           <span class="accordion-plus"></span>
-                       </div>
-                       <div class="accordion-ext">
-                           <p>
-                               Некоторые ограничения действуют для граждан стран, не входящих в ЕС, желающих приобрести недвижимость в приграничных районах (статья 24 Закона 1892/1990), таких как восточная часть Эгейского моря, Додеканес, Фракия и другие регионы северной Греции. Ограничения могут быть сняты по специальному запросу с указанием предполагаемого использования недвижимости. Лицензия на приобретение такой недвижимости выдается Министерством национальной обороны после подачи запроса в соответствующий комитет децентрализованной администрации данного региона.
-                           </p>
-                       </div>
-                   </div>
-                   <div class="accordion-box">
-                       <div class="accordion-click link">
-                           <h3>Как можно приобрести недвижимость в Греции?</h3>
-                           <span class="accordion-plus"></span>
-                       </div>
-                       <div class="accordion-ext">
-                           <p>
-                               Некоторые ограничения действуют для граждан стран, не входящих в ЕС, желающих приобрести недвижимость в приграничных районах (статья 24 Закона 1892/1990), таких как восточная часть Эгейского моря, Додеканес, Фракия и другие регионы северной Греции. Ограничения могут быть сняты по специальному запросу с указанием предполагаемого использования недвижимости. Лицензия на приобретение такой недвижимости выдается Министерством национальной обороны после подачи запроса в соответствующий комитет децентрализованной администрации данного региона.
-                           </p>
-                       </div>
-                   </div>
-                   <div class="accordion-box">
-                       <div class="accordion-click link">
-                           <h3>Необходимо ли заявителю открывать банковский счет для приобретения недвижимости, и если да, то какова процедура?</h3>
-                           <span class="accordion-plus"></span>
-                       </div>
-                       <div class="accordion-ext">
-                           <p>
-                               Некоторые ограничения действуют для граждан стран, не входящих в ЕС, желающих приобрести недвижимость в приграничных районах (статья 24 Закона 1892/1990), таких как восточная часть Эгейского моря, Додеканес, Фракия и другие регионы северной Греции. Ограничения могут быть сняты по специальному запросу с указанием предполагаемого использования недвижимости. Лицензия на приобретение такой недвижимости выдается Министерством национальной обороны после подачи запроса в соответствующий комитет децентрализованной администрации данного региона.
-                           </p>
-                       </div>
-                   </div>
-               </div>
-               <div class="accordion-col G-flex-column">
-                   <div class="accordion-box">
-                       <div class="accordion-click link">
-                           <h3>Какие дополнительные расходы повлечет за собой сделка с недвижимостью?</h3>
-                           <span class="accordion-plus"></span>
-                       </div>
-                       <div class="accordion-ext">
-                           <p>
-                               Некоторые ограничения действуют для граждан стран, не входящих в ЕС, желающих приобрести недвижимость в приграничных районах (статья 24 Закона 1892/1990), таких как восточная часть Эгейского моря, Додеканес, Фракия и другие регионы северной Греции. Ограничения могут быть сняты по специальному запросу с указанием предполагаемого использования недвижимости. Лицензия на приобретение такой недвижимости выдается Министерством национальной обороны после подачи запроса в соответствующий комитет децентрализованной администрации данного региона.
-                           </p>
-                       </div>
-                   </div>
-                   <div class="accordion-box">
-                       <div class="accordion-click link">
-                           <h3>Какую прибыль можно ожидать от инвестиций в недвижимость в Греции?</h3>
-                           <span class="accordion-plus"></span>
-                       </div>
-                       <div class="accordion-ext">
-                           <p>
-                               Некоторые ограничения действуют для граждан стран, не входящих в ЕС, желающих приобрести недвижимость в приграничных районах (статья 24 Закона 1892/1990), таких как восточная часть Эгейского моря, Додеканес, Фракия и другие регионы северной Греции. Ограничения могут быть сняты по специальному запросу с указанием предполагаемого использования недвижимости. Лицензия на приобретение такой недвижимости выдается Министерством национальной обороны после подачи запроса в соответствующий комитет децентрализованной администрации данного региона.
-                           </p>
-                       </div>
-                   </div>
-                   <div class="accordion-box">
-                       <div class="accordion-click link">
-                           <h3>Как облагается налогом доход от аренды?</h3>
-                           <span class="accordion-plus"></span>
-                       </div>
-                       <div class="accordion-ext">
-                           <p>
-                               Некоторые ограничения действуют для граждан стран, не входящих в ЕС, желающих приобрести недвижимость в приграничных районах (статья 24 Закона 1892/1990), таких как восточная часть Эгейского моря, Додеканес, Фракия и другие регионы северной Греции. Ограничения могут быть сняты по специальному запросу с указанием предполагаемого использования недвижимости. Лицензия на приобретение такой недвижимости выдается Министерством национальной обороны после подачи запроса в соответствующий комитет децентрализованной администрации данного региона.
-                           </p>
-                       </div>
-                   </div>
-                   <div class="accordion-box">
-                       <div class="accordion-click link">
-                           <h3>Какие еще налоги и сборы, связанные с недвижимым имуществом, взимаются в Греции?</h3>
-                           <span class="accordion-plus"></span>
-                       </div>
-                       <div class="accordion-ext">
-                           <p>
-                               Некоторые ограничения действуют для граждан стран, не входящих в ЕС, желающих приобрести недвижимость в приграничных районах (статья 24 Закона 1892/1990), таких как восточная часть Эгейского моря, Додеканес, Фракия и другие регионы северной Греции. Ограничения могут быть сняты по специальному запросу с указанием предполагаемого использования недвижимости. Лицензия на приобретение такой недвижимости выдается Министерством национальной обороны после подачи запроса в соответствующий комитет децентрализованной администрации данного региона.
-                           </p>
-                       </div>
-                   </div>
-               </div>
-           </div>
-            <div class="reviews-page-btn G-center">
-                <button class="btn-white">Показать еще</button>
+
+<section class="concept-dual">
+    <div class="container">
+        <div class="concept-dual-title G-align-start G-justify-between">
+            <h2>почему мы?</h2>
+            <div class="concept-dual-text G-align-start ">
+                <p>
+                    Мы превращаем концепцию двойного гражданства и глобального резидентства в стратегический инструмент увеличения и сохранения благосостояния. С Global Resident получение второго гражданства или вида на жительство становится прозрачной и однозначной процедурой.
+                </p>
+                <button class="btn">О компании</button>
+            </div>
+        </div>
+
+        <div class="concept-dual-flex G-flex">
+            <div class="concept-col G-flex-column">
+                <div class="concept-box G-align-center">
+                    <div class="concept-icon G-center">
+                        <img src="./assets/img/icons/guarantees.png" alt="guarantees">
+                    </div>
+                    <div class="concept-info G-flex-column">
+                        <h3>гарантии</h3>
+                        <p>Опережаем сроки, лидеры рынка по скорости подготовки документов. 100% одобренных заявок благодаря отлаженным процессам.</p>
+                    </div>
+                </div>
+                <div class="concept-box G-align-center">
+                    <div class="concept-icon G-center">
+                        <img src="./assets/img/icons/speed.png" alt="speed">
+                    </div>
+                    <div class="concept-info G-flex-column">
+                        <h3>Скорость</h3>
+                        <p>Благодаря собственной команде в разных странах мы оперативно готовим различные документы. Это существенно ускоряет процесс и сокращает сроки.</p>
+                    </div>
+                </div>
+                <div class="concept-box G-align-center">
+                    <div class="concept-icon G-center">
+                        <img src="./assets/img/icons/price.png" alt="price">
+                    </div>
+                    <div class="concept-info G-flex-column">
+                        <h3>цена</h3>
+                        <p>Мы работаем без посредников, поэтому мы можем предлагать довольно низкие цены и прозрачные условия без дополнительных наценок.</p>
+                    </div>
+                </div>
+                <div class="concept-box G-align-center">
+                    <div class="concept-icon G-center">
+                        <img src="./assets/img/icons/experience.png" alt="experience">
+                    </div>
+                    <div class="concept-info G-flex-column">
+                        <h3>опыт</h3>
+                        <p>Компания работает с 1999 года и оформила более 1500 документов для клиентов из разных стран — наш опыт позволяет понимать процесс до мелочей.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="concept-photo G-flex">
+                <img src="./assets/img/concept-photo.jpg" alt="concept">
+            </div>
+        </div>
+        <div class="concept-dual-mobile">
+            <button class="btn">О компании</button>
+        </div>
+    </div>
+</section>
+
+
+<section class="asked-questions">
+    <div class="container">
+        <div class="asked-questions-flex G-flex">
+            <div class="asked-questions-info G-flex-column G-center">
+                <h2>часто задаваемые вопросы</h2>
+                <p>Здесь вы найдёте ответы на самые распространённые вопросы о получении резидентства, чтобы быстро разобраться в ключевых этапах и возможностях.</p>
+            </div>
+            <div id="accordion" class="accordion G-flex-column">
+                <div class="accordion-box">
+                    <div class="accordion-click link active">
+                        <strong>Что такое резидентство?</strong>
+                        <span class="accordion-plus"></span>
+                    </div>
+                    <div class="accordion-ext">
+                        <p>
+                            Резидентство — это официальный правовой статус, позволяющий человеку постоянно проживать в выбранной стране, пользоваться её инфраструктурой и получать преимущества, недоступные временным посетителям.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-box">
+                    <div class="accordion-click link">
+                        <strong>Какие страны предлагают наиболее популярные программы резидентства?</strong>
+                        <span class="accordion-plus"></span>
+                    </div>
+                    <div class="accordion-ext">
+                        <p>
+                            Резидентство — это официальный правовой статус, позволяющий человеку постоянно проживать в выбранной стране, пользоваться её инфраструктурой и получать преимущества, недоступные временным посетителям.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-box">
+                    <div class="accordion-click link">
+                        <strong>В чём разница между резидентством и гражданством?</strong>
+                        <span class="accordion-plus"></span>
+                    </div>
+                    <div class="accordion-ext">
+                        <p>
+                            Резидентство — это официальный правовой статус, позволяющий человеку постоянно проживать в выбранной стране, пользоваться её инфраструктурой и получать преимущества, недоступные временным посетителям.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-box">
+                    <div class="accordion-click link">
+                        <strong>Какие существуют способы получить резидентство?</strong>
+                        <span class="accordion-plus"></span>
+                    </div>
+                    <div class="accordion-ext">
+                        <p>
+                            Резидентство — это официальный правовой статус, позволяющий человеку постоянно проживать в выбранной стране, пользоваться её инфраструктурой и получать преимущества, недоступные временным посетителям.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-box">
+                    <div class="accordion-click link">
+                        <strong>Какие страны предлагают наиболее популярные программы резидентства?</strong>
+                        <span class="accordion-plus"></span>
+                    </div>
+                    <div class="accordion-ext">
+                        <p>
+                            Резидентство — это официальный правовой статус, позволяющий человеку постоянно проживать в выбранной стране, пользоваться её инфраструктурой и получать преимущества, недоступные временным посетителям.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-box">
+                    <div class="accordion-click link">
+                        <strong>Какие страны предлагают наиболее популярные программы резидентства?</strong>
+                        <span class="accordion-plus"></span>
+                    </div>
+                    <div class="accordion-ext">
+                        <p>
+                            Резидентство — это официальный правовой статус, позволяющий человеку постоянно проживать в выбранной стране, пользоваться её инфраструктурой и получать преимущества, недоступные временным посетителям.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 </section>
+
+<section class="company-cert">
+    <div class="container">
+        <h2>сертификаты <br> компании</h2>
+        <div class="company-cert-rel">
+            <div class="swiper company-cert-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="company-cert-box">
+                            <div class="company-cert-photo">
+                                <img src="./assets/img/cert-1.png" alt="cert">
+                            </div>
+                            <div class="company-cert-name">
+                                <span>International Migration Council — Certified Member</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="company-cert-box">
+                            <div class="company-cert-photo">
+                                <img src="./assets/img/cert-2.png" alt="cert">
+                            </div>
+                            <div class="company-cert-name">
+                                <span>Investment Migration Council (IMC) — Membership Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="company-cert-box">
+                            <div class="company-cert-photo">
+                                <img src="./assets/img/cert-1.png" alt="cert">
+                            </div>
+                            <div class="company-cert-name">
+                                <span>International Migration Council — Certified Member</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="company-cert-box">
+                            <div class="company-cert-photo">
+                                <img src="./assets/img/cert-2.png" alt="cert">
+                            </div>
+                            <div class="company-cert-name">
+                                <span>Investment Migration Council (IMC) — Membership Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="company-cert-box">
+                            <div class="company-cert-photo">
+                                <img src="./assets/img/cert-1.png" alt="cert">
+                            </div>
+                            <div class="company-cert-name">
+                                <span>International Migration Council — Certified Member</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="company-cert-box">
+                            <div class="company-cert-photo">
+                                <img src="./assets/img/cert-2.png" alt="cert">
+                            </div>
+                            <div class="company-cert-name">
+                                <span>Investment Migration Council (IMC) — Membership Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="company-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
+            <div class="company-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
+        </div>
+    </div>
+</section>
+
+
 
 <section class="blog-main">
     <div class="container">
@@ -4840,8 +5989,6 @@
         </div>
     </div>
 </section>
-
-
 <section class="contact-main">
     <div class="container">
         <div class="contact-cont G-flex">
@@ -4962,6 +6109,117 @@
         </div>
     </div>
 </footer>
+
+
+<!--============-modal-call-============-->
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+
+        <div class="modal-title G-flex-column G-align-center">
+            <h2>свяжитесь с нами</h2>
+            <p>Оставьте заявку и получите бесплатную консультацию специалиста</p>
+        </div>
+        <form>
+            <div class="contact-item">
+                <div class="contact-input">
+                    <label>
+                        <input type="text" placeholder="Имя">
+                    </label>
+                </div>
+                <div class="contact-input">
+                    <label>
+                        <input type="text" name="tel" placeholder="Телефон" class="mask-phone">
+                    </label>
+                </div>
+                <div class="contact-input">
+                    <label>
+                        <input type="text" placeholder="E-mail">
+                    </label>
+                </div>
+                <div class="contact-input">
+                    <label>
+                        <textarea placeholder="Ваш вопрос"></textarea>
+                    </label>
+                </div>
+
+                <button class="btn">Отправить</button>
+                <label class="checkbox-lab">
+                    <small>Я согласен на обработку моих персональных данных.</small>
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                </label>
+
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+<!--============-modal-presentation-============-->
+
+<div class="modal" id="modal-get">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+
+        <div class="modal-title G-flex-column G-align-center">
+            <h2>получить презентацию</h2>
+            <p>Оставьте заявку и получите бесплатную презентацию с подробной информацией</p>
+        </div>
+        <form>
+            <div class="contact-item">
+                <div class="contact-input">
+                    <label>
+                        <input type="text" placeholder="Имя">
+                    </label>
+                </div>
+                <div class="contact-input">
+                    <label>
+                        <input type="text" name="tel" placeholder="Телефон" class="mask-phone">
+                    </label>
+                </div>
+                <div class="contact-input">
+                    <label>
+                        <input type="text" placeholder="E-mail">
+                    </label>
+                </div>
+
+                <button type="submit" class="btn">Отправить</button>
+                <label class="checkbox-lab">
+                    <small>Я согласен на обработку моих персональных данных.</small>
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                </label>
+
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+
+<!--============-modal-thanks-============-->
+
+
+<div class="modal" id="modal-thanks">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+
+        <div class="modal-title G-flex-column G-align-center">
+            <h2>благодарим за запрос!</h2>
+            <p>Наш специалист свяжется с вами в ближайшее время</p>
+        </div>
+        <div class="contact-item">
+            <button class="btn">Вернуться</button>
+        </div>
+    </div>
+</div>
+
+
+
 
 <script src="assets/js/jquery-3.6.4.js"></script>
 <script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>

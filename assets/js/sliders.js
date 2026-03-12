@@ -75,13 +75,6 @@ let blogSwiper = new Swiper(".blog-slider", {
 });
 
 
-
-
-
-
-
-
-
 let requiredSwiper = new Swiper(".required-slider", {
     slidesPerView: 4,
     spaceBetween: 8,
@@ -122,19 +115,6 @@ let requiredSwiper = new Swiper(".required-slider", {
         prevEl: ".required-button-prev",
     },
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -224,19 +204,11 @@ let companySwiper = new Swiper(".company-cert-slider", {
 
 
 
-
-
-
-
-
-
-
 let estateSwiper = new Swiper(".real-estate-sm-slider", {
     spaceBetween: 8,
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
-
     breakpoints: {
         1599: {
             slidesPerView: 4,
@@ -258,7 +230,6 @@ let estateSwiperSm = new Swiper(".real-estate-slider", {
             spaceBetween: 8,
             slidesPerView: 1.8,
         },
-
         1299: {
             spaceBetween: 8,
             slidesPerView: 1.6,
@@ -280,17 +251,4 @@ let estateSwiperSm = new Swiper(".real-estate-slider", {
         swiper: estateSwiper,
     },
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
