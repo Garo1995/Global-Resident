@@ -17,7 +17,7 @@
 .residency-flag img{
     width: 100%;
     border-radius: 50%;
-    height: 90px;
+    height: 100%;
 }
 
 
@@ -100,6 +100,29 @@
     position: relative;
     z-index: 1;
 }
+.obtain-residence .services-items {
+    max-width: 1285px;
+}
+
+.obtain-resid-flex{
+    gap: 8px;
+}
+.obtain-resid-flex .services-included{
+    max-width: 590px;
+    width: 100%;
+}
+.obtain-resid-flex .services-info {
+    max-width: 840px;
+    width: 100%;
+}
+.obtain-resid-wrok{
+    max-width: 424px;
+    width: 100%;
+}
+.obtain-resid-wrok img{
+    width: 100%;
+    border-radius: 16px;
+}
 .obtain-residence-title{
     gap: 24px;
     padding-right: 76px;
@@ -128,7 +151,7 @@
     justify-content: space-between;
 }
 .greek-resid-flex h2{
-    max-width: 327px;
+    max-width: 341px;
     width: 100%;
 }
 .greek-resid-wrap{
@@ -146,4 +169,810 @@
 }
 .greek-resid-box h4{
     text-transform: uppercase;
+}
+
+
+
+
+
+.step-plan-main{
+    background: rgba(241, 245, 246, 1);
+    padding: 100px 0;
+}
+.step-plan-main h2{
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+.step-plan-wrap{
+    margin-top: 60px;
+    gap: 8px;
+}
+.step-plan-box{
+    position: relative;
+    width: calc(25% - 6px);
+    background: rgba(255, 255, 255, 1);
+    border-radius: 24px;
+    height: 375px;
+}
+
+.step-plan-box span{
+    position: absolute;
+    font-weight: 200;
+    font-size: 306px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(241, 245, 246, 1);
+}
+.step-plan-box h4{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    width: 187px;
+    text-transform: uppercase;
+}
+.arrow-step{
+    width: 60px;
+    height: 60px;
+    background: rgba(241, 245, 246, 1);
+    border: 4px solid rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    box-shadow: 0px 7px 7px 0px rgba(21, 50, 118, 0.09);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -34px;
+    z-index: 2;
+}
+
+.arrow-step:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 26px;
+    border-top: 2px solid rgba(21, 50, 118, 1);
+    border-right: 2px solid rgba(21, 50, 118, 1);
+    width: 7px;
+    height: 7px;
+    transform: rotate(45deg) translateY(-50%);
+    transition: 0.3s;
+}
+
+.step-plan-box:nth-child(4) .arrow-step,
+.step-plan-box:nth-child(7) .arrow-step {
+    display: none;
+}
+
+.step-plan-mobile{
+    display: none;
+}
+
+
+.required-residency .required-bank-rel{
+    margin-top: 24px;
+}
+
+.required-bank-href{
+    background: rgba(241, 245, 246, 1);
+    margin: 64px auto 24px;
+    width: max-content;
+    padding: 4px 8px;
+    border-radius: 16px;
+
+}
+.required-bank-href ul{
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.required-bank-href a{
+    border-radius: 16px;
+    padding: 16px 32px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+.required-bank-href a.active-bank-res{
+    background: rgba(255, 255, 255, 1);
+}
+
+.want-more-fon{
+    position: relative;
+    z-index: 3;
+    border: 2px solid rgba(241, 245, 246, 1);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 1px 5px 5px 0px rgba(41, 69, 80, 0.03);
+    padding: 60px;
+    border-radius: 24px;
+    max-width: 1306px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.want-more-title{
+    max-width: 466px;
+    width: 100%;
+}
+.want-more-title p{
+    margin-top: 16px;
+    max-width: 380px;
+    color: rgba(21, 50, 118, 0.81);
+}
+.want-more-fon .contact-item{
+    max-width: 554px;
+    width: 100%;
+    margin-top: 0;
+}
+.want-more-fon .write-messenger{
+    max-width: 200px;
+    width: 100%;
+    margin-top: -100px;
+}
+.want-more-fon .messenger-social {
+    margin-top: 12px;
+}
+.want-more-fon .write-messenger p {
+    text-align: left;
+}
+.want-more-padd{
+    padding: 132px 0;
+    margin: 195px 0 0;
+}
+
+
+
+.cases-sec{
+    padding: 100px 0;
+    overflow: hidden;
+}
+.cases-rel{
+    margin-top: 80px;
+    position: relative;
+}
+.cases-slider{
+    overflow: unset;
+}
+.cases-slider .cases-box{
+    width: 100%;
+}
+.cases-rel .cases-button-prev{
+    left: -26px;
+}
+.cases-rel .cases-button-next{
+    right: -26px;
+}
+
+.cases-sec-mob{
+    display: none;
+}
+
+
+.reviews-sec{
+    margin-top: 100px;
+    overflow: hidden;
+}
+.reviews-slider{
+    overflow: unset;
+}
+.reviews-rel{
+    margin-top: 80px;
+    position: relative;
+}
+
+.reviews-rel .reviews-button-prev{
+    left: -26px;
+}
+.reviews-rel .reviews-button-next{
+    right: -26px;
+}
+.reviews-slider .reviews-box{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.required-mob-click{
+    display: none;
+}
+
+
+.obtain-conv-href {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -60px;
+    margin-top: 80px;
+}
+.obtain-conv-href ul{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(241, 245, 246, 1);
+    border-radius: 16px;
+    padding: 8px;
+}
+.obtain-conv-href a{
+    border-radius: 8px;
+    padding: 16px 32px;
+    transition: 0.3s;
+    text-align: center;
+}
+.obtain-conv-href a.active-page-res{
+    background: rgba(255, 255, 255, 1);
+}
+
+
+
+
+
+
+
+.residency-estate{
+    padding: 100px 0 199px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+.residency-estate:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 50, 118, 0.60);
+    background-blend-mode: color;
+
+}
+
+.residency-estate:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 447px;
+    background-blend-mode: color;
+    background: linear-gradient(360deg, #153276 0%, rgba(21, 50, 118, 0) 100%);
+
+}
+
+
+
+
+
+@media (max-width: 1599px){
+    .residency-flag {
+        width: 90px;
+        height: 90px;
+        padding: 11px;
+        top: -45px;
+    }
+    .residency-single {
+        padding: 82px 0;
+    }
+    .benefic-conv-href ul li a {
+        border-radius: 12px;
+        padding: 18px 30px;
+    }
+    .benefic-conv-href ul {
+        gap: 6px;
+    }
+    .benefic-conv-href {
+        border-radius: 18px;
+        padding: 6px;
+        margin: -28px auto 0;
+    }
+    .benefic-conv-cnt {
+        margin: 75px 0 0;
+    }
+    .benefic-conv-flex {
+        margin: 36px 0;
+        gap: 6px;
+    }
+    .benefic-conv-box {
+        border-radius: 18px;
+        padding: 25px 25px;
+        min-height: 117px;
+    }
+    .benefic-conv-box h4 {
+        max-width: 105px;
+    }
+    .benefic-conv-box p {
+        max-width: 251px;
+    }
+    .obtain-residence {
+        padding: 75px 0 0;
+        margin-top: 75px;
+    }
+    .obtain-residence-title h2 {
+        max-width: 234px;
+    }
+    .obtain-residence-title p {
+        max-width: 585px;
+    }
+    .obtain-residence .services-cnt {
+        margin-top: 59px;
+    }
+
+    .obtain-residence:before {
+        height: 736px;
+        border-radius: 30px 30px 0 0;
+    }
+    .greek-resid-main {
+        padding: 74px 0;
+    }
+    .greek-resid-flex h2 {
+        max-width: 245px;
+    }
+    .greek-resid-wrap {
+        gap: 6px;
+        max-width: 966px;
+    }
+    .greek-resid-box {
+        width: calc(33.333333% - 4px);
+        border-radius: 18px;
+        padding: 24px;
+        height: 281px;
+    }
+    .step-plan-main {
+        padding: 75px 0;
+    }
+    .step-plan-main h2 {
+        max-width: 460px;
+    }
+    .step-plan-wrap {
+        margin-top: 45px;
+        gap: 6px;
+    }
+    .step-plan-box {
+        width: calc(25% - 5px);
+        border-radius: 18px;
+        height: 281px;
+    }
+    .obtain-resid-wrok {
+        max-width: 319px;
+    }
+    .step-plan-box span {
+        font-size: 227px;
+    }
+    .arrow-step {
+        width: 45px;
+        height: 45px;
+        border: 3px solid rgba(255, 255, 255, 1);
+        border-radius: 12px;
+        right: -26px;
+    }
+    .arrow-step:after {
+        right: 20px;
+        width: 6px;
+        height: 6px;
+    }
+
+    .want-more-fon {
+        padding: 45px;
+        border-radius: 18px;
+        max-width: 980px;
+    }
+    .want-more-title {
+        max-width: 348px;
+    }
+    .want-more-fon .contact-item {
+        max-width: 416px;
+        margin-top: 0;
+    }
+    .want-more-title p {
+        margin-top: 12px;
+        max-width: 267px;
+    }
+
+    .want-more-fon .write-messenger {
+        margin-top: -70px;
+        align-items: flex-start;
+    }
+    .want-more-padd {
+        padding: 100px 0;
+        margin: 140px 0 0;
+    }
+
+    .cases-sec {
+        padding: 75px 0;
+        overflow: hidden;
+    }
+
+    .cases-rel .cases-button-prev{
+        left: -20px;
+    }
+    .cases-rel .cases-button-next{
+        right: -20px;
+    }
+
+
+    .reviews-rel .reviews-button-prev{
+        left: -20px;
+    }
+    .reviews-rel .reviews-button-next{
+        right: -20px;
+    }
+    .cases-rel {
+        margin-top: 60px;
+    }
+
+    .reviews-rel {
+        margin-top: 60px;
+    }
+    .reviews-sec {
+        margin-top: 75px;
+    }
+    .required-bank-href a {
+        border-radius: 8px;
+        padding: 12px 24px;
+    }
+    .required-bank-href {
+        margin: 48px auto 12px;
+        padding: 3px 6px;
+        border-radius: 12px;
+    }
+    .obtain-residence-title {
+        padding-right: 57px;
+    }
+    .required-residency .required-bank-rel {
+        margin-top: 18px;
+    }
+    .obtain-conv-href {
+        margin-bottom: -39px;
+        margin-top: 61px;
+    }
+    .obtain-conv-href a {
+        border-radius: 6px;
+        padding: 12px 24px;
+    }
+    .obtain-conv-href ul {
+        gap: 6px;
+        border-radius: 12px;
+        padding: 6px;
+    }
+    .residency-estate {
+        padding: 76px 0 150px;
+    }
+
+    .residency-estate:after {
+        height: 408px;
+    }
+
+}
+@media (max-width: 1199px){
+    .obtain-residence-title {
+        padding-right: 0;
+    }
+    .greek-resid-flex {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .greek-resid-flex h2 {
+        max-width: 363px;
+        text-align: center;
+    }
+    .step-plan-box {
+        height: 250px;
+    }
+    .step-plan-box span {
+        font-size: 172px;
+    }
+
+
+    .step-plan-box h4 {
+        width: 141px;
+    }
+    .want-more-padd {
+        margin: 100px 0 0;
+    }
+    .residency-single {
+        padding: 160px 0;
+        background-position: center;
+    }
+
+}
+
+@media (max-width: 1020px){
+    .benefic-conv-box {
+        border-radius: 18px;
+        padding: 23px 25px;
+        min-height: 111px;
+        width: 100%;
+    }
+    .obtain-residence-title {
+        padding-right: 0;
+        flex-direction: column;
+    }
+    .obtain-residence-title p {
+        font-size: 15px;
+    }
+    .obtain-residence .services-items {
+        padding: 6px 6px 24px;
+    }
+    .obtain-resid-flex {
+        gap: 8px;
+        flex-direction: column-reverse;
+    }
+    .obtain-resid-wrok {
+        max-width: 100%;
+    }
+    .obtain-resid-wrok img {
+        width: 100%;
+        border-radius: 12px;
+        height: 270px;
+        object-fit: cover;
+    }
+    .obtain-resid-flex .services-info {
+        max-width: 940px;
+        padding: 30px 30px 10px;
+    }
+    .greek-resid-box {
+        width: calc(50% - 4px);
+    }
+
+    .step-plan-box {
+        height: 200px;
+        width: calc(33.333333% - 5px);
+    }
+    .step-plan-box span {
+        font-size: 160px;
+    }
+    .obtain-conv-href{
+        display: none;
+    }
+    .step-plan-box h4 {
+        width: 144px;
+        font-size: 16px;
+    }
+    .residency-estate:after{
+        display: none;
+    }
+    .step-plan-box:nth-child(3) .arrow-step{
+        display: none;
+    }
+    .step-plan-box:nth-child(6) .arrow-step{
+        display: none;
+    }
+    .step-plan-box:nth-child(4) .arrow-step{
+        display: flex;
+    }
+    .want-more-fon {
+        max-width: 511px;
+        flex-direction: column;
+        align-items: center;
+        gap: 45px 37px;
+    }
+    .want-more-fon .write-messenger {
+        margin-top: 0;
+        align-items: center;
+    }
+    .want-more-fon .write-messenger p{
+        text-align: center;
+    }
+    .want-more-padd {
+        padding: 215px 0;
+    }
+    .want-more-title {
+        max-width: 354px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .obtain-residence {
+        padding: 32px 0 0;
+        margin-top: 95px;
+    }
+    .residency-estate {
+        padding: 179px 0 179px;
+    }
+}
+@media (max-width: 767px){
+    .residency-single .bank-accounts-fon {
+        max-width: 400px;
+        border-radius: 18px;
+        padding: 60px 35px 25px;
+    }
+    .residency-flag {
+        width: 82px;
+        height: 82px;
+        padding: 8px;
+        top: -40px;
+    }
+    .obtain-residence:before {
+        height: 636px;
+        border-radius: 16px 16px 0 0;
+    }
+    .residency-single .bank-accounts-fon h1 {
+        margin-top: 22px;
+    }
+
+    .obtain-resid-flex .services-info {
+        padding: 22px 16px 10px;
+    }
+    .step-plan-main h2 {
+        max-width: 360px;
+        padding-right: 24px;
+
+    }
+    .step-plan-main .container {
+        padding-right: 0;
+    }
+    .step-plan-wrap{
+        display: none;
+    }
+    .step-plan-mobile{
+        display: block;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .step-plan-box{
+        width: 100%;
+    }
+    .step-plan-box {
+        width: 100%;
+        height: 290px;
+        border-radius: 12px;
+    }
+
+    .required-mob-click {
+        background: #fff;
+        padding: 23px 18px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: -0.04em;
+        color: rgba(21, 50, 118, 1);
+        position: relative;
+        transition: 0.3s;
+        background: rgba(241, 245, 246, 1);
+
+    }
+    .required-mob-click:after {
+        content: "";
+        position: absolute;
+        top: 23px;
+        right: 24px;
+        border-top: 2px solid rgba(21, 50, 118, 1);
+        border-right: 2px solid rgba(21, 50, 118, 1);
+        width: 7px;
+        height: 7px;
+        transform: rotate(135deg);
+        transition: 0.3s;
+    }
+    .services-mobile-active .required-mob-click:after{
+        transform: rotate(-45deg);
+        top: 28px;
+
+    }
+    .want-more-padd {
+        padding: 105px 0;
+    }
+
+    .required-bank-href {
+        margin: 32px auto 12px;
+        padding: 0;
+        border-radius: 12px;
+        width: auto;
+        background: unset;
+    }
+    .required-bank-href ul{
+        display: none;
+    }
+
+}
+
+@media (max-width: 570px){
+    .residency-single .bank-accounts-fon {
+        max-width: 380px;
+        padding: 60px 24px 24px;
+    }
+    .residency-single .bank-accounts-fon h1 {
+        margin-top: 16px;
+    }
+    .benefic-conv-href ul li a {
+        border-radius: 8px;
+        padding: 11px 21px;
+    }
+    .benefic-conv-href {
+        border-radius: 14px;
+        padding: 6px;
+        margin: -22px auto 0;
+    }
+    .benefic-conv-cnt h2 br{
+        display: none;
+    }
+    .benefic-conv-box {
+        border-radius: 18px;
+        padding: 24px;
+        min-height: 112px;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .benefic-conv-box h4 {
+        max-width: 100%;
+    }
+    .benefic-conv-box p {
+        max-width: 100%;
+    }
+    .obtain-resid-wrok img {
+        height: 125px;
+        object-fit: cover;
+    }
+    .obtain-resid-flex .services-info h3 {
+        font-size: 24px;
+    }
+    .obtain-resid-flex .services-included {
+        margin-top: 0;
+    }
+    .greek-resid-box {
+        width: 100%;
+    }
+    .arrow-step {
+        width: 32px;
+        height: 32px;
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-radius: 8px;
+        right: -18px;
+    }
+    .arrow-step:after {
+        right: 14px;
+        width: 5px;
+        height: 5px;
+    }
+    .required-bank-rel .required-button-prev, .required-bank-rel .required-button-next{
+        display: none;
+    }
+    .want-more-fon {
+        gap: 32px 12px;
+        padding: 24px;
+    }
+    .want-more-padd .container {
+        padding-right: 24px;
+    }
+    .want-more-padd {
+        padding: 80px 0;
+    }
+
+    .cases-sec-title .btn{
+        display: none;
+    }
+    .cases-sec-mob{
+        display: flex;
+        margin-top: 8px;
+    }
+    .cases-sec {
+        padding: 34px 0 60px;
+    }
+    .cases-rel {
+        margin-top: 32px;
+    }
+    .cases-sec-title {
+        justify-content: center;
+    }
+    .asked-residency {
+        padding-bottom: 10px;
+    }
+    .residency-estate {
+        padding: 166px 0 170px;
+    }
 }

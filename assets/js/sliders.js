@@ -100,14 +100,12 @@ let requiredSwiper = new Swiper(".required-slider", {
             slidesPerGroup: 1,
             spaceBetween: 8,
             loop: true,
-            centeredSlides: true,
         },
         320: {
-            slidesPerView: 1.2,
+            slidesPerView: 1,
             slidesPerGroup: 1,
             spaceBetween: 8,
             loop: true,
-            centeredSlides: true,
         },
     },
     navigation: {
@@ -204,6 +202,7 @@ let companySwiper = new Swiper(".company-cert-slider", {
 
 
 
+
 let estateSwiper = new Swiper(".real-estate-sm-slider", {
     spaceBetween: 8,
     slidesPerView: 4,
@@ -252,3 +251,112 @@ let estateSwiperSm = new Swiper(".real-estate-slider", {
     },
 });
 
+
+
+
+
+
+
+
+
+
+
+
+let casesSwiper = new Swiper(".cases-slider", {
+    slidesPerView: 2,
+    spaceBetween: 8,
+    loop: true,
+    breakpoints: {
+        1199: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        1020: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        767: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+
+        320: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+    },
+    navigation: {
+        nextEl: ".cases-button-next",
+        prevEl: ".cases-button-prev",
+    },
+});
+
+
+
+
+
+let reviewsSwiper = new Swiper(".reviews-slider", {
+    slidesPerView: 3,
+    spaceBetween: 8,
+    loop: true,
+    breakpoints: {
+        1199: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        1020: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        767: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+
+        320: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+            centeredSlides: true,
+
+        },
+    },
+    navigation: {
+        nextEl: ".reviews-button-next",
+        prevEl: ".reviews-button-prev",
+    },
+});
+
+
+
+
+let stepPlanSwiper = new Swiper(".step-plan-slider", {
+    slidesPerView: 2,
+    spaceBetween: 8,
+    loop: true,
+    breakpoints: {
+        767: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        570: {
+            slidesPerView: 2.2,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+        320: {
+            slidesPerView: 1.2,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+    },
+
+});
