@@ -148,3 +148,75 @@ modals.forEach(modal => {
         }
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.querySelectorAll('.js-select').forEach((select) => {
+    const button = select.querySelector('.js-select-btn');
+    const value = select.querySelector('.js-select-value');
+    const options = select.querySelectorAll('.filter-option');
+
+    button.addEventListener('click', (e) => {
+        e.stopPropagation();
+
+        document.querySelectorAll('.js-select.open').forEach((item) => {
+            if (item !== select) item.classList.remove('open');
+        });
+
+        select.classList.toggle('open');
+    });
+
+    options.forEach((option) => {
+        option.addEventListener('click', () => {
+            options.forEach((item) => item.classList.remove('active'));
+            option.classList.add('active');
+            value.textContent = option.dataset.value;
+            select.classList.remove('open');
+        });
+    });
+});
+
+document.addEventListener('click', () => {
+    document.querySelectorAll('.js-select.open').forEach((item) => {
+        item.classList.remove('open');
+    });
+});
+
+const priceRange = document.querySelector('.js-price-range');
+const priceValue = document.querySelector('.js-price-value');
+
+if (priceRange && priceValue) {
+    const formatPrice = (num) => {
+        return '€' + Number(num).toLocaleString('ru-RU');
+    };
+    priceValue.textContent = formatPrice(priceRange.value);
+    priceRange.addEventListener('input', () => {
+        priceValue.textContent = formatPrice(priceRange.value);
+    });
+}

@@ -335,8 +335,12 @@
 .cases-slider{
     overflow: unset;
 }
+.cases-slider .swiper-slide{
+    height: auto;
+}
 .cases-slider .cases-box{
     width: 100%;
+    height: 100%;
 }
 .cases-rel .cases-button-prev{
     left: -26px;
@@ -344,7 +348,9 @@
 .cases-rel .cases-button-next{
     right: -26px;
 }
-
+.cases-arrow-mob .cases-pagination{
+    display: none;
+}
 .cases-sec-mob{
     display: none;
 }
@@ -975,4 +981,46 @@
     .residency-estate {
         padding: 166px 0 170px;
     }
+    .cases-arrow-mob{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        position: relative;
+        height: 40px;
+        margin-top: 8px;
+    }
+    .cases-arrow-mob .swiper-pagination{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 231px;
+        width: 100%;
+        border: 1.2px solid rgba(241, 245, 246, 1);
+        position: relative;
+        bottom: 0;
+        background: rgba(241, 245, 246, 1);
+        height: 40px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(21, 50, 118, 1);
+        border-radius: 6px;
+    }
+    .cases-arrow-mob .swiper-pagination span{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .cases-arrow-mob .swiper-button-prev,
+    .cases-arrow-mob .swiper-button-next{
+        left: 0;
+        top: 0;
+        margin: 0;
+        position: relative;
+        background: rgba(241, 245, 246, 1);
+        border: 1.2px solid rgba(241, 245, 246, 1);
+        width: 40px;
+        height: 40px;
+    }
+
 }

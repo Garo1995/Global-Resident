@@ -47,7 +47,7 @@ button, .btn, .btn-white{
 .btn, .btn-white{
     width: max-content;
     gap: 8px;
-    padding: 20px 40px;
+    padding: 18px 40px;
 }
 .btn{
     background: rgba(21, 50, 118, 1);
@@ -806,12 +806,12 @@ button, .btn, .btn-white{
     content: "";
     display: none;
     position: absolute;
-    left: 12px;
+    left: 13px;
     top: 7px;
-    width: 6px;
+    width: 5px;
     height: 11px;
     border: solid rgba(21, 50, 118, 1);
-    border-width: 0 3px 3px 0;
+    border-width: 0 2px 2px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);

@@ -242,6 +242,10 @@ let estateSwiperSm = new Swiper(".real-estate-slider", {
             slidesPerView: 1,
         },
     },
+    pagination: {
+        el: ".estate-pagination",
+        type: "fraction",
+    },
     navigation: {
         nextEl: ".estate-next",
         prevEl: ".estate-prev",
@@ -282,12 +286,15 @@ let casesSwiper = new Swiper(".cases-slider", {
             slidesPerGroup: 1,
             spaceBetween: 8,
         },
-
         320: {
             slidesPerView: 1,
             slidesPerGroup: 1,
             spaceBetween: 8,
         },
+    },
+    pagination: {
+        el: ".cases-pagination",
+        type: "fraction",
     },
     navigation: {
         nextEl: ".cases-button-next",
@@ -328,6 +335,10 @@ let reviewsSwiper = new Swiper(".reviews-slider", {
 
         },
     },
+    pagination: {
+        el: ".reviews-pagination",
+        type: "fraction",
+    },
     navigation: {
         nextEl: ".reviews-button-next",
         prevEl: ".reviews-button-prev",
@@ -360,3 +371,63 @@ let stepPlanSwiper = new Swiper(".step-plan-slider", {
     },
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let servGalSwiper = new Swiper(".real-estate-sm-slider", {
+    spaceBetween: 8,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+        1599: {
+            slidesPerView: 4,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+
+        320: {
+            slidesPerView: 4,
+            spaceBetween: 6,
+        },
+    },
+});
+let estateGalSwiperSm = new Swiper(".real-gall-slider", {
+    spaceBetween: 8,
+    slidesPerView: 1,
+    pagination: {
+        el: ".estate-pagination",
+        type: "fraction",
+    },
+    navigation: {
+        nextEl: ".estate-next",
+        prevEl: ".estate-prev",
+    },
+    thumbs: {
+        swiper: servGalSwiper,
+    },
+});
+

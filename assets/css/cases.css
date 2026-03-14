@@ -305,4 +305,7 @@
     .reviews-href{
         width: 100%;
     }
+    .reviews-href small {
+        font-size: 15px;
+    }
 }
