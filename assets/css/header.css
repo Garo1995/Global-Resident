@@ -199,7 +199,7 @@ header{
     position: absolute;
     left: 0;
     width: 100%;
-    top: 105px;
+    top: 101px;
 }
 .submenu:before{
     content: "";
@@ -328,7 +328,6 @@ header .btn{
     flex-wrap: wrap;
     gap: 0 24px;
 }
-
 .whole-country-names ul li{
     width: 219px;
 }
@@ -361,7 +360,6 @@ header .btn{
     font-size: 16px;
     font-weight: 400;
     letter-spacing: unset;
-
 }
 
 .whole-country-js{

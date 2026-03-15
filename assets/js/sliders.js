@@ -348,6 +348,10 @@ let reviewsSwiper = new Swiper(".reviews-slider", {
 
 
 
+
+
+
+
 let stepPlanSwiper = new Swiper(".step-plan-slider", {
     slidesPerView: 2,
     spaceBetween: 8,
@@ -431,3 +435,25 @@ let estateGalSwiperSm = new Swiper(".real-gall-slider", {
     },
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let popularSwiper = new Swiper(".popular-count-slider", {
+    slidesPerView: 1,
+    spaceBetween: 8,
+    pagination: {
+        el: ".popular-pagination",
+        type: "fraction",
+    }
+});

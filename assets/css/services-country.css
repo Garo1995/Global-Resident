@@ -1,0 +1,851 @@
+.banner-head p{
+    color: #ffffff;
+    text-align: center;
+    max-width: 648px;
+    width: 100%;
+}
+
+.serv-estate-min{
+    background: rgba(255, 255, 255, 1);
+    border-radius: 40px 40px 24px 24px;
+    padding: 40px;
+    position: relative;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.realty-filter {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+
+.filter-item {
+    position: relative;
+    width: 100%;
+    max-width: 296px;
+}
+
+.filter-label {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: rgba(21, 50, 118, 0.3);
+}
+
+.filter-control,
+.price-box {
+    width: 100%;
+    min-height: 80px;
+    background: rgba(241, 245, 246, 1);
+    border-radius: 16px;
+}
+
+.filter-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 24px;
+    cursor: pointer;
+    color: rgba(21, 50, 118, 0.3);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+.filter-control span{
+    font-size: 16px;
+    color: rgba(21, 50, 118, 0.3);
+
+}
+
+
+.filter-control svg {
+    flex: 0 0 auto;
+    color: rgba(37, 45, 82, 1);
+    transition: transform 0.2s ease;
+    width: 20px;
+    height: 20px;
+}
+
+.filter-item.open .filter-control svg {
+    transform: rotate(180deg);
+}
+
+.filter-dropdown {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    padding: 6px;
+    border-radius: 12px;
+    background: rgba(241, 245, 246, 1);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    transition: 0.2s ease;
+}
+
+.filter-item.open .filter-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.filter-option {
+    padding: 18px 12px;
+    font-size: 20px;
+    line-height: 100%;
+    color: rgba(21, 50, 118, 1);
+    cursor: pointer;
+    transition: 0.3s;
+    border-bottom: 1px solid rgba(215, 222, 231, 1);
+    position: relative;
+}
+.filter-option:last-child{
+    border: unset;
+}
+
+.filter-option.active {
+    padding-left: 31px;
+}
+
+.filter-option:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 13px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(21, 50, 118, 1);
+    transition: 0.3s;
+    opacity: 0;
+}
+.filter-option.active:before{
+    opacity: 1;
+}
+
+
+.filter-item--price .price-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 9px 14px 8px;
+    position: relative;
+}
+
+.price-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.price-muted {
+    color: rgba(21, 50, 118, 0.3);
+}
+
+.price-value {
+    color: rgba(37, 45, 82, 1);
+    white-space: nowrap;
+}
+
+.price-range {
+    width: 93%;
+    margin: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: pointer;
+    bottom: 0;
+    position: absolute;
+    left: 7px;
+}
+
+.price-range::-webkit-slider-runnable-track {
+    height: 4px;
+    background: #213f73;
+    border-radius: 999px;
+}
+
+.price-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    margin-top: -4px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(21, 50, 118, 1);
+}
+
+.price-range::-moz-range-track {
+    height: 4px;
+    background: rgba(21, 50, 118, 1);
+    border-radius: 999px;
+}
+
+.price-range::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(21, 50, 118, 1);
+
+}
+
+
+.filter-item-check{
+    max-width: 151px;
+    width: 100%;
+}
+.realty-filter .btn{
+    max-width: 263px;
+    width: 100%;
+    height: 80px;
+}
+.filter-item-check .checkbox-lab {
+    padding-left: 0;
+    margin-top: 8px;
+    gap: 16px;
+}
+
+.popular-countries{
+    margin-top: 40px;
+}
+.popular-countries-titile .more-info{
+    font-size: 16px;
+}
+.more-countries-filter ul li {
+    width: calc(15.8% - 6px);
+}
+.more-countries-filter{
+    margin-top: 25px;
+    width: 100%;
+}
+.more-countries-filter ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 24px;
+}
+.more-countries-filter a img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.more-countries-filter a{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: rgba(21, 50, 118, 1);
+    padding: 18px 16px;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    background: rgba(255, 255, 255, 1);
+    transition: 0.3s;
+    letter-spacing: unset;
+
+}
+.more-countries-filter a:hover{
+    border-bottom: 1px solid rgba(21, 50, 118, 1);
+}
+.more-countries-filter a span{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: unset;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.popular-count-wrap{
+    margin: 40px 0 48px;
+    gap: 8px;
+}
+.popular-count-box{
+    width: calc(33.333333% - 6px);
+    box-shadow: 0px 14px 14px 0px rgba(11, 31, 75, 0.1);
+    background: rgba(255, 255, 255, 1);
+    padding: 8px;
+    border-radius: 24px;
+    position: relative;
+}
+.popular-count-slider{
+    width: 100%;
+}
+.popular-count-photo{
+    position: relative;
+}
+.popular-count-box .btn{
+    width: 100%;
+}
+.popu-yarlik{
+    position: absolute;
+    top: 21px;
+    left: 8px;
+    backdrop-filter: blur(48.900001525878906px);
+    background: rgba(255, 255, 255, 1);
+    border-radius: 0 16px 16px 0;
+    padding: 10px 16px 10px 12px;
+    color: rgba(232, 0, 74, 1);
+    z-index: 2;
+}
+
+
+.popular-count-new{
+    padding: 40px 32px;
+}
+.popular-count-new h4{
+    text-transform: uppercase;
+}
+.popular-count-new small{
+    display: block;
+    margin-top: 12px;
+
+}
+.popular-liner{
+    border-top: 1px solid rgba(21, 50, 118, 0.1);
+    margin: 12px 0;
+    display: block;
+    width: 100%;
+}
+.popular-count-new ul{
+    margin-top: 40px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.popular-count-new ul li{
+    border-bottom: 1px solid rgba(21, 50, 118, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+.popular-count-new ul li p{
+    color: rgba(208, 214, 228, 1);
+}
+
+.popular-count-new strong{
+    margin-top: 40px;
+    display: block;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+
+}
+.popular-pagination{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 1);
+    width: max-content;
+    background: rgba(21, 50, 118, 0.2);
+    backdrop-filter: blur(48.900001525878906px);
+    border-radius: 100px;
+    padding: 8px 16px;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+}
+.popular-pagination span{
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.popular-count-photo img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+
+
+
+
+
+.about-country{
+    background: #ffffff;
+    padding-top: 140px;
+    border-radius: 40px 40px 0 0;
+    margin-top: -54px;
+    z-index: 2;
+}
+
+.about-country-flex{
+    gap: 32px;
+}
+
+.about-country-info{
+    max-width: 672px;
+    width: 100%;
+
+}
+.about-country-info p{
+    margin-top: 24px;
+}
+.about-country-col{
+    margin-top: 28px;
+    gap: 8px;
+}
+
+
+.about-country-name{
+    background: rgba(241, 245, 246, 1);
+    border-radius: 100px;
+    padding: 16px;
+    gap: 25px;
+}
+
+.check-about{
+    background: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    max-width: 40px;
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+.check-about:before{
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    width: 5px;
+    height: 11px;
+    border: solid rgba(21, 50, 118, 1);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.about-country-btn{
+    gap: 8px;
+}
+
+.about-country-main{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 82px 0 162px;
+}
+.about-country-main .bank-accounts-fon {
+    max-width: 702px;
+    padding: 60px 60px 60px;
+}
+.about-country-main h1 {
+    margin-top: 60px;
+}
+
+.about-country-main  p {
+    margin-top: 24px;
+}
+.about-country-main .container{
+    position: relative;
+}
+.about-country-main .btn {
+    margin-top: 62px;
+}
+.go-back-services{
+    gap: 12px;
+    padding: 16px 24px 16px 16px;
+    position: absolute;
+    left: 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+}
+
+.country-map{
+    max-width: 818px;
+    width: 100%;
+    height: 680px;
+}
+.country-map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+
+.real-estate-catalog{
+    background: #ffffff;
+    margin-top: 200px;
+}
+.real-catalog-cnt h2{
+    text-align: center;
+}
+
+.real-catalog-cnt .serv-estate-col{
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1599px){
+    .banner-head p {
+        max-width: 476px;
+        width: 100%;
+    }
+    .serv-estate-min {
+        border-radius: 24px 24px;
+        padding: 24px;
+    }
+    .filter-control, .price-box {
+        min-height: 60px;
+        border-radius: 8px;
+    }
+    .realty-filter .btn {
+        max-width: 160px;
+        width: 100%;
+        height: 60px;
+        padding: 8px;
+    }
+    .filter-item-check {
+        max-width: 115px;
+    }
+    .filter-option {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+    .popular-count-photo img{
+        border-radius: 12px;
+    }
+    .popular-count-new {
+        padding: 24px 16px;
+    }
+    .popular-count-new strong {
+        margin-top: 24px;
+        font-size: 20px;
+    }
+    .popular-pagination {
+        font-size: 15px;
+        padding: 6px 14px;
+        bottom: 13px;
+    }
+    .popular-count-box {
+        padding: 6px;
+        border-radius: 16px;
+    }
+    .popular-count-wrap {
+        margin: 24px 0 32px;
+        gap: 6px;
+    }
+    .popular-count-box {
+        width: calc(33.333333% - 4px);
+        border-radius: 16px;
+    }
+    .popular-count-new ul li {
+        padding-bottom: 10px;
+    }
+    .popular-count-new ul {
+        margin-top: 24px;
+        gap: 10px;
+    }
+    .more-countries-filter {
+        margin-top: 18px;
+    }
+    .more-countries-filter ul {
+        gap: 0 18px;
+    }
+
+    .more-countries-filter a {
+        gap: 12px;
+        font-size: 12px;
+        padding: 13px 4px 13px 12px;
+    }
+    .more-countries-filter a img {
+        width: 24px;
+        height: 24px;
+    }
+    .more-countries-filter a span {
+        font-size: 15px;
+    }
+    .about-country-main .bank-accounts-fon {
+        max-width: 530px;
+        padding: 45px 45px 45px;
+    }
+
+    .about-country-main h1 {
+        margin-top: 24px;
+    }
+    .about-country-main h1 {
+        margin-top: 24px;
+    }
+    .about-country {
+        padding-top: 100px;
+        border-radius: 24px 24px 0 0;
+        margin-top: -20px;
+    }
+    .real-estate-catalog {
+        margin-top: 100px;
+    }
+    .check-about {
+        max-width: 26px;
+        height: 26px;
+    }
+    .check-about:before {
+        left: 10px;
+        top: 7px;
+        width: 4px;
+        height: 8px;
+    }
+    .real-catalog-cnt .serv-estate-col {
+        margin-top: 24px;
+    }
+}
+@media(max-width: 1199px){
+    .go-back-services {
+        left: 20px;
+    }
+}
+@media(max-width: 1199px){
+    .realty-filter {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .realty-filter .btn {
+        max-width: 260px;
+    }
+
+    .popular-countries {
+        margin-top: 24px;
+    }
+    .more-countries-filter ul li {
+        width: calc(24% - 5px);
+    }
+}
+@media(max-width: 1099px){
+    .popular-count-box {
+        width: calc(50% - 4px);
+    }
+    .about-country-main .bank-accounts-fon {
+        max-width: 501px;
+        padding: 45px 34px 45px;
+    }
+    .about-country-flex {
+        gap: 40px;
+        flex-direction: column;
+    }
+    .country-map {
+        max-width: 100%;
+        height: 500px;
+    }
+    .about-country {
+        padding-top: 52px;
+    }
+
+}
+@media(max-width: 1020px){
+    .filter-item {
+        max-width: 100%;
+    }
+    .real-catalog-cnt .serv-estate-col {
+        margin-top: 12px;
+    }
+    .filter-label {
+        margin-bottom: 9px;
+        font-size: 15px;
+    }
+    .realty-filter .btn {
+        max-width: 100%;
+    }
+    .popu-yarlik {
+        top: 20px;
+        left: 6px;
+        padding: 8px 10px 8px 8px;
+    }
+    .realty-filter {
+        gap: 12px;
+    }
+    .popular-countries-titile .more-info {
+        font-size: 14px;
+    }
+    .popular-count-new h4 {
+        font-size: 14px;
+    }
+    .popular-count-new small {
+        margin-top: 6px;
+        font-size: 12px;
+    }
+    .popular-count-new strong{
+        font-size: 14px;
+    }
+    .more-countries-filter ul {
+        gap: 0 12px;
+    }
+    .serv-estate-col{
+        border-radius: 24px 24px;
+        padding: 24px;
+        background: #ffffff;
+    }
+    .serv-estate-min {
+        border-radius: 0;
+        padding: 0;
+        background: unset;
+        margin-top: 30px;
+    }
+    .go-back-services {
+        top: 0;
+        gap: 8px;
+        padding: 12px 20px 12px 12px;
+        border-radius: 6px;
+        width: max-content;
+        position: relative;
+        left: 0;
+    }
+    .about-country-main {
+        padding: 40px 0 113px;
+        background-position: center;
+    }
+    .about-country-main .bank-accounts-fon {
+        margin-top: 32px;
+    }
+    .about-country-name {
+        padding: 12px;
+        gap: 14px;
+    }
+}
+@media(max-width: 767px){
+    .popular-count-box{
+        width: 100%;
+    }
+    .popular-countries {
+        margin-top: 24px;
+    }
+    .more-countries-filter ul {
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        height: 58vh;
+        flex-wrap: unset;
+        overflow-y: scroll;
+    }
+    .more-countries-filter ul {
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+        flex-wrap: unset;
+        overflow-y: scroll;
+        padding-right: 8px;
+    }
+    .more-countries-filter ul::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        border-radius: 10px;
+
+
+    }
+    .more-countries-filter ul::-webkit-scrollbar-thumb {
+        width: 5px;
+        height: 5px;
+        background: rgba(21, 50, 118, 1);
+        border-radius: 10px;
+
+    }
+    .more-countries-filter ul li {
+        width: 100%;
+    }
+
+
+
+}
+@media(max-width: 575px){
+    .filter-option {
+        padding: 14px 16px;
+        font-size: 15px;
+    }
+    .filter-control {
+        padding: 12px 18px;
+        font-size: 15px;
+    }
+    .more-countries-filter a span {
+        font-size: 14px;
+    }
+    .popular-pagination {
+        font-size: 12px;
+        padding: 6px 13px;
+        bottom: 9px;
+    }
+
+    .popular-liner {
+        margin: 7px 0;
+    }
+    .popular-count-new {
+        padding: 18px 10px;
+    }
+    .serv-estate-col {
+        padding: 24px 6px;
+    }
+    .popular-countries-titile {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .sevices-estate-page {
+        padding: 80px 0 0;
+        background: #fff;
+    }
+    .popular-count-wrap {
+        margin: 24px 0 10px;
+    }
+    .popular-count-box {
+        border-radius: 12px;
+    }
+    .about-country-main p {
+        margin-bottom: 0;
+        margin-top: 18px;
+    }
+    .about-country-btn {
+        flex-direction: column;
+        margin-top: 32px;
+        width: 100%;
+    }
+    .about-country-main .btn {
+        margin-top: 0;
+    }
+    .about-country-main .bank-accounts-fon {
+        max-width: 501px;
+        padding: 32px 24px 24px;
+    }
+}
+

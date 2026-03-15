@@ -53,6 +53,9 @@ button, .btn, .btn-white{
     background: rgba(21, 50, 118, 1);
     color: rgba(255, 255, 255, 1);
 }
+.btn:hover {
+    background: #0f2458;
+}
 
 .btn-white{
     background: rgba(255, 255, 255, 1);
@@ -619,6 +622,9 @@ button, .btn, .btn-white{
 .btn-sliver{
     background: rgba(241, 245, 246, 1);
     color: rgba(21, 50, 118, 1);
+}
+.btn-sliver:hover{
+    color: #ffffff;
 }
 .blog-rel{
     margin-top: 84px;
