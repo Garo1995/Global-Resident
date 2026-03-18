@@ -1,4 +1,4 @@
-.banner-head p{
+.banner-header-style p{
     color: #ffffff;
     text-align: center;
     max-width: 648px;
@@ -521,7 +521,7 @@
 
 
 @media (max-width: 1599px){
-    .banner-head p {
+    .banner-header-style p {
         max-width: 476px;
         width: 100%;
     }

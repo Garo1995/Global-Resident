@@ -90,13 +90,18 @@
 
 .foreign-account-box strong{
     font-size: 32px;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+
 }
 .foreign-design{
     display: flex;
     flex-direction: column;
     gap: 26px;
 }
-
+.foreign-design h4{
+    text-transform: uppercase;
+}
 
 
 

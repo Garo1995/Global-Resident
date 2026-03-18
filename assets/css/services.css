@@ -8,7 +8,7 @@
     background: rgba(21, 50, 118, 1);
     height: 515px;
 }
-.banner-head{
+.banner-header-style{
     gap: 40px;
     position: relative;
     z-index: 1;
@@ -16,7 +16,7 @@
 
 }
 
-.banner-head h1{
+.banner-header-style h1{
     font-size: 72px;
     text-align: center;
     color: rgba(255, 255, 255, 1);
@@ -346,7 +346,7 @@
         max-width: 210px;
         font-size: 18px;
     }
-    .banner-head {
+    .banner-header-style {
         gap: 30px;
         padding: 57px 0 75px;
     }
@@ -393,7 +393,7 @@
     .details-tap ul li {
         padding-bottom: 18px;
     }
-    .banner-head h1 {
+    .banner-header-style h1 {
         font-size: 54px;
     }
 
@@ -472,7 +472,7 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .banner-head h1 {
+    .banner-header-style h1 {
         font-size: 60px;
     }
     .download-boxes {
@@ -541,7 +541,7 @@
     .services-page-text p{
         font-size: 15px;
     }
-    .banner-head {
+    .banner-header-style {
         gap: 16px;
         padding: 80px 0 80px;
     }
@@ -632,7 +632,7 @@
 
 }
 @media (max-width: 767px){
-    .banner-head h1 {
+    .banner-header-style h1 {
         font-size: 44px;
     }
     .services-page-main {
